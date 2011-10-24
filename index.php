@@ -96,10 +96,9 @@ $limitSelect = ot2_limitSelect();
 $checkedAttr = ' checked="checked"';
 $form =
 		'<form action="' . $Tool->remoteBasePath . '" method="get" class="colly ns"><fieldset>'
-	.	'<legend>' . _( 'settings-legend' ) . '</legend>'
+	.	'<legend>' . _( 'form-legend-settings', 'krinkle' ) . '</legend>'
 
 			// Select wiki
-	.		'<label for="wikidb">' . _( 'label-wiki' ) . '</label>'
 	.		kfGetAllWikiSelect( array( 'current' => $Params['wikidb'] ) )
 	.		'<br />'
 

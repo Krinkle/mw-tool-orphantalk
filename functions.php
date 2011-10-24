@@ -7,7 +7,7 @@ function ot2_getOddNamespacesByDB( $wikidb ) {
 	$dbQuery = "
 		SELECT ns_id, ns_name FROM toolserver.namespacename
 		WHERE dbname='" . mysql_clean( $wikidb ) . "'
-		AND ns_type='primary' AND ns_id%2=1
+		AND ns_is_favorite=1 AND ns_id%2=1
 		ORDER BY ns_id;";
 	$dbResult = kfDoSelectQueryRaw( $dbQuery );
 	if ( empty( $dbResult ) ) {
