@@ -25,8 +25,8 @@ $I18N = new TsIntuition( 'Orphantalk2' );
 $toolConfig = array(
 	'displayTitle'	=> 'OrphanTalk2',
 	'simplePath'	=> '/OrphanTalk2/',
-	'revisionId'	=> '0.0.1',
-	'revisionDate'	=> '2011-04-01',
+	'revisionId'	=> '0.2.1',
+	'revisionDate'	=> '2011-10-24',
 	'I18N'			=> $I18N,
 );
 
