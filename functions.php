@@ -118,76 +118,77 @@ function ot2_link( $href, $text ){
 }
 
 function ot2_renderOutput( $dbResults, $dbname, $oddNSs ) {
-global $toolSettings, $Params;
+	global $toolSettings, $Params;
+	
+	$allnamespaces = ot2_getAllNamespacesByDB( $dbname );
+	
+	$output =
+		'<h3 id="output">' . _( 'output' ) . '</h3>'
+	.	'<table class="wikitable ns">'
+	.	'<tr><th>' . _( 'page' )  . '</th><th>' . _( 'redirect' )  . '</th></tr>';
+	
+	$wikiData = kfGetWikiDataFromDBName( $dbname );
+	
+	$limited = false;
+	if ( count( $dbResults ) > $Params['limit'] ) {
+		array_pop( $dbResults ); $limited = true;
+	}
 
-$allnamespaces = ot2_getAllNamespacesByDB( $dbname );
-
-$output =
-	'<h3 id="output">' . _( 'output' ) . '</h3>'
-.	'<table class="wikitable ns">'
-.	'<tr><th>' . _( 'page' )  . '</th><th>' . _( 'redirect' )  . '</th></tr>';
-
-$wikiData = kfGetWikiDataFromDBName( $dbname );
-
-$limited = false;
-if ( count( $dbResults ) > $Params['limit'] ) {
-	array_pop( $dbResults ); $limited = true;
-}
-foreach( $dbResults as $i => $res ) {
-		$p_view = array(
-			'curid' => $res->page_id,
-			'redirect' => 'no',
-		);
-		$p_diff = array(
-			'curid' => $res->page_id,
-			'redirect' => 'no',
-			'diff' => 'curr',
-		);
-		$p_hist = array(
-			'curid' => $res->page_id,
-			'action' => 'history',
-		);
-		$p_viewsubject = array(
-			'title' => $allnamespaces[$toolSettings['subjectspace']] . ':' . $res->page_title,
-			'redirect' => 'no',
-		);
-		$p_links = array(
-			'title' => 'Special:WhatLinksHere',
-			'target' => $oddNSs[$res->page_namespace] . ':' . $res->page_title,
-		);
-		$deleteSummary = _( 'deletesummary', array( 'variables' => array( '[[m:User:Krinkle/Tools#OrphanTalk2|Krinkle/OrphanTalk2]]' )));
-		$p_delete = array(
-			'curid' => $res->page_id,
-			'redirect' => 'no',
-			'action' => 'delete',
-			'wpReason' => $deleteSummary,
-		);
-		$globalUsage = '';
-		if ( $Params['wikidb'] == 'commonswiki_p' && $toolSettings['subjectspace'] == 6  ) {
-			$p_globalusage = array(
-				'title' => 'Special:GlobalUsage',
-				'target' => $res->page_title,
+	foreach( $dbResults as $i => $res ) {
+			$p_view = array(
+				'curid' => $res->page_id,
+				'redirect' => 'no',
 			);
-			$globalUsage = ' | ' . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_globalusage ), _( 'tools-globalusage' ) );
-		}
-		$output .= '
-			<tr>
-				<td>'
-					. '<small>('
-						 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_delete ), _( 'tools-delete' ) )
-						 . $globalUsage
-						 . ' | '
-						 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_links ), _( 'tools-links' ) )
-						 . ' | '
-						 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_viewsubject ), _( 'tools-subject' ) )
-						 . ' | '
-						 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_hist ), _( 'tools-hist' ) )
-						 . ' | '
-						 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_diff ), _( 'tools-curr' ) )
-					 . ')</small> &middot; '
-					. ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_view ), $oddNSs[$res->page_namespace] . ':' . $res->page_title ) . '</td>
-				<td>' . $res->page_is_redirect . '</td>
-			</tr>';
+			$p_diff = array(
+				'curid' => $res->page_id,
+				'redirect' => 'no',
+				'diff' => 'curr',
+			);
+			$p_hist = array(
+				'curid' => $res->page_id,
+				'action' => 'history',
+			);
+			$p_viewsubject = array(
+				'title' => $allnamespaces[$toolSettings['subjectspace']] . ':' . $res->page_title,
+				'redirect' => 'no',
+			);
+			$p_links = array(
+				'title' => 'Special:WhatLinksHere',
+				'target' => $oddNSs[$res->page_namespace] . ':' . $res->page_title,
+			);
+			$deleteSummary = _( 'deletesummary', array( 'variables' => array( '[[m:User:Krinkle/Tools#OrphanTalk2|Krinkle/OrphanTalk2]]' )));
+			$p_delete = array(
+				'curid' => $res->page_id,
+				'redirect' => 'no',
+				'action' => 'delete',
+				'wpReason' => $deleteSummary,
+			);
+			$globalUsage = '';
+			if ( $Params['wikidb'] == 'commonswiki_p' && $toolSettings['subjectspace'] == 6  ) {
+				$p_globalusage = array(
+					'title' => 'Special:GlobalUsage',
+					'target' => $res->page_title,
+				);
+				$globalUsage = ' | ' . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_globalusage ), _( 'tools-globalusage' ) );
+			}
+			$output .= '
+				<tr>
+					<td>'
+						. '<small>('
+							 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_delete ), _( 'tools-delete' ) )
+							 . $globalUsage
+							 . ' | '
+							 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_links ), _( 'tools-links' ) )
+							 . ' | '
+							 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_viewsubject ), _( 'tools-subject' ) )
+							 . ' | '
+							 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_hist ), _( 'tools-hist' ) )
+							 . ' | '
+							 . ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_diff ), _( 'tools-curr' ) )
+						 . ')</small> &middot; '
+						. ot2_link( $wikiData['url'] . '/?' .http_build_query( $p_view ), $oddNSs[$res->page_namespace] . ':' . $res->page_title ) . '</td>
+					<td>' . $res->page_is_redirect . '</td>
+				</tr>';
 	}
 	if ( empty( $dbResults ) ) {
 		$output .= '<tr><td colspan="2"><em>' . _html( 'noresults') . '</em></td></tr>';
