@@ -1,24 +1,22 @@
 <?php
 /**
- *
+ * OrphanTalk2
  * Created on January 29, 2011
  *
- * Copyright 2011 Krinkle <krinklemail@gmail.com>
- *
- * This file is licensed under
- * the Creative Commons Attribution 3.0 Unported License
- * <http://creativecommons.org/licenses/by/3.0/>
- *
- * @file OrphanTalk2
+ * @author Krinkle <krinklemail@gmail.com>, 2011 - 2012
+ * @license CC-BY 3.0
  */
 
 /**
  * Configuration
  * -------------------------------------------------
  */
-require_once( '/home/krinkle/common/InitTool.php' ); // BaseTool
-require_once( __DIR__ . '/functions.php' ); // Local functions
-require_once( KR_TSINT_START_INC ); // Localization
+// BaseTools
+require_once( '/home/krinkle/common/InitTool.php' );
+// Local functions
+require_once( __DIR__ . '/functions.php' );
+// Localization
+require_once( KR_TSINT_START_INC );
 
 $I18N = new TsIntuition( 'Orphantalk2' );
 
