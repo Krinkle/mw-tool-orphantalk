@@ -85,7 +85,7 @@ function ot2_talkSelect( $oddNSs ) {
 		$talkSelect .= '<select name="namespace">';
 		foreach( $oddNSs as $nsID => $nsName ) {
 			$attr = '';
-			if ( $Params['namespace'] == $nsID ) {
+			if ( isset( $Params['namespace'] ) && $Params['namespace'] == $nsID ) {
 				$attr = ' selected="selected"';
 			}
 			$talkSelect .= "<option value=\"$nsID\"$attr>" . htmlspecialchars( $nsName ) . '</option>';
