@@ -21,12 +21,12 @@ require_once( __DIR__ . '/functions.php' );
 $I18N = new TsIntuition( 'Orphantalk2' );
 
 $toolConfig = array(
-	'displayTitle'	=> 'OrphanTalk2',
-	'simplePath'	=> '/OrphanTalk2/',
-	'localBasePath' => __DIR__,
-	'revisionId'	=> '0.2.1',
-	'revisionDate'	=> '2011-10-24',
-	'I18N'			=> $I18N,
+	'displayTitle'     => 'OrphanTalk2',
+	'remoteBasePath'   => $kgConf->getRemoteBase() . '/OrphanTalk2/',
+	'localBasePath'    => __DIR__,
+	'revisionId'       => '0.2.1',
+	'revisionDate'     => '2011-10-24',
+	'I18N'             => $I18N,
 );
 
 $Tool = BaseTool::newFromArray( $toolConfig );
