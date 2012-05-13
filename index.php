@@ -23,14 +23,13 @@ $I18N = new TsIntuition( 'Orphantalk2' );
 $toolConfig = array(
 	'displayTitle'     => 'OrphanTalk2',
 	'remoteBasePath'   => $kgConf->getRemoteBase() . '/OrphanTalk2/',
-	'localBasePath'    => __DIR__,
 	'revisionId'       => '0.2.1',
 	'revisionDate'     => '2011-10-24',
 	'I18N'             => $I18N,
 );
 
 $Tool = BaseTool::newFromArray( $toolConfig );
-$Tool->setSourceInfoGithub( 'Krinkle', 'ts-krinkle-Orphantalk2' );
+$Tool->setSourceInfoGithub( 'Krinkle', 'ts-krinkle-Orphantalk2', __DIR__ );
 
 $Tool->doHtmlHead();
 $Tool->doStartBodyWrapper();
