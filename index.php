@@ -56,13 +56,13 @@ $toolSettings = array(
 $Params = array(
 	'wikidb' => getParamVar( 'wikidb' ),
 	'update' => getParamVar( 'update' ),
-	'namespace' => getParamInt( 'namespace' ),
+	'namespace' => getParamVar( 'namespace' ),
 	'hideredirects' => getParamCheck( 'hideredirects' ),
 	'hidesubpages' => getParamCheck( 'hidesubpages' ),
 	'sort' => getParamCheck( 'sort' ),
 	'limit' => getParamInt( 'limit' ),
 );
-if ( !is_odd( $Params['namespace'] ) ) {
+if ( $Params['namespace'] !== '*' && !is_odd( $Params['namespace'] ) ) {
 	unset( $Params['namespace'] );
 }
 if ( !in_array( $Params['limit'], $toolSettings['limits'] ) ) {
@@ -71,11 +71,16 @@ if ( !in_array( $Params['limit'], $toolSettings['limits'] ) ) {
 $toolSettings['permalink'] = $Tool->generatePermalink( $Params );
 
 // Submitted ?
-if ( !empty( $Params['wikidb'] ) && !empty( $Params['namespace'] ) && empty( $Params['update'] ) ) {
+if ( $Params['wikidb'] && isset( $Params['namespace'] ) && !$Params['update'] ) {
 	$toolSettings['isSubmit'] = true;
 	// Determine subject and talkspace
-	$toolSettings['talkspace'] = $Params['namespace'];
-	$toolSettings['subjectspace'] = $Params['namespace']-1;
+	if ( $Params['namespace'] !== '*' ) {
+		$toolSettings['talkspace'] = $Params['namespace'];
+		$toolSettings['subjectspace'] = $Params['namespace']-1;
+	} else {
+		$toolSettings['talkspace'] = '*';
+		$toolSettings['subjectspace'] = '*';
+	}
 }
 
 
@@ -99,29 +104,29 @@ $form =
 
 			// Select wiki
 	.		kfGetAllWikiSelect( array( 'current' => $Params['wikidb'] ) )
-	.		'<br />'
+	.		'<br>'
 
 			// Update form
-	.		'<label></label><input type="submit" nof value="' . _( 'update' ) . '" /><br />'
+	.		'<label></label><input type="submit" nof value="' . _( 'update' ) . '"><br>'
 
 			// Select talk space
-	.		"$talkSelect<br />"
+	.		"$talkSelect<br>"
 
 			// Toggle redirects
 	.		'<label for="hideredirects">' . _( 'hideredirects' ) . '</label>'
-	.		'<input type="checkbox" name="hideredirects" value="on" ' . ( $Params['hideredirects'] ? $checkedAttr : '' ) . ' />'
-	.		'<br />'
+	.		'<input type="checkbox" name="hideredirects" value="on" ' . ( $Params['hideredirects'] ? $checkedAttr : '' ) . '>'
+	.		'<br>'
 
 			// Toggle subpages
 	.		'<label for="hidesubpages">' . _( 'hidesubpages' ) . '</label>'
-	.		'<input type="checkbox" name="hidesubpages" value="on" ' . ( $Params['hidesubpages'] ? $checkedAttr : '' ) . ' />'
-	.		'<br />'
+	.		'<input type="checkbox" name="hidesubpages" value="on" ' . ( $Params['hidesubpages'] ? $checkedAttr : '' ) . '>'
+	.		'<br>'
 
 			// Select limit
-	.		"$limitSelect<br />"
+	.		"$limitSelect<br>"
 
 			// Submit form
-	.		'<label></label><input type="submit" nof value="' . _g( 'form-submit' ) . '" /><br />'
+	.		'<label></label><input type="submit" nof value="' . _g( 'form-submit' ) . '"><br>'
 	
 
 	.	'</fieldset></form>';

@@ -4,8 +4,9 @@
  */
 
 function ot2_getOddNamespacesByDB( $wikidb ) {
-	$dbQuery = "
-		SELECT ns_id, ns_name FROM toolserver.namespacename
+	$dbQuery = " /* OrphanTalk2::getOddNamespacesByDB */
+		SELECT ns_id, ns_name
+		FROM toolserver.namespacename
 		WHERE dbname='" . mysql_clean( $wikidb ) . "'
 		AND ns_is_favorite=1 AND ns_id%2=1
 		ORDER BY ns_id;";
@@ -21,10 +22,11 @@ function ot2_getOddNamespacesByDB( $wikidb ) {
 }
 
 function ot2_getAllNamespacesByDB( $wikidb ) {
-	$dbQuery = "
-		SELECT ns_id, ns_name FROM toolserver.namespacename
+	$dbQuery = " /* OrphanTalk2::getAllNamespacesByDB */
+		SELECT ns_id, ns_name
+		FROM toolserver.namespacename
 		WHERE dbname='" . mysql_clean( $wikidb ) . "'
-		AND ns_type='primary'
+		AND ns_is_favorite=1
 		ORDER BY ns_id;";
 	$dbResult = kfDoSelectQueryRaw( $dbQuery );
 	if ( empty( $dbResult ) ) {
@@ -38,10 +40,10 @@ function ot2_getAllNamespacesByDB( $wikidb ) {
 }
 
 function ot2_prepareQuery( $p ) {
-	global $toolSettings;
+	global $toolSettings, $Params;
 
 	$whereClauses = array();
-	$orderClause = 'ORDER BY p2.page_title ASC';
+	$orderClause = 'ORDER BY p2.page_namespace ASC, p2.page_title ASC';
 	if ( $p['hideredirects'] ) {
 		$whereClauses[] = 'AND p2.page_is_redirect=0';
 	}
@@ -50,12 +52,21 @@ function ot2_prepareQuery( $p ) {
 		$whereClauses[] = 'AND p2.page_title NOT LIKE "%/%"';
 	
 	}
-	
-	if ( $p['sort'] == 'older' ) {
-		$orderClause = 'ORDER BY p2.page_id DESC';
+
+	if ( $Params['namespace'] === '*' ) {
+		// all subject spaces are even
+		$p1NsSql = 'p1.page_namespace=p2.page_namespace-1';
+		// all talk spaces are odd
+		// exclude user talk pages as those are generally not unwanted orphans
+		$p2NsSql = 'p2.page_namespace!=3 AND p2.page_namespace%2=1';
+	} else {
+		$p1NsSql = 'p1.page_namespace=' . (int)$Params['namespace']-1;
+		$p2NsSql = 'p2.page_namespace=' . (int)$Params['namespace'];
 	}
+
+
 	$limit = $p['limit'] + 1;
-	$dbQuery = "
+	$dbQuery = " /* LIMIT:20 */ /* OrphanTalk2::prepareQuery */
 		SELECT
 			p2.page_title,
 			p2.page_namespace,
@@ -65,10 +76,10 @@ function ot2_prepareQuery( $p ) {
 		FROM page as p1
 			RIGHT JOIN page as p2
 				ON p1.page_title = p2.page_title
-				AND p1.page_namespace=" . (int)$toolSettings['subjectspace'] . "
+				AND " . $p1NsSql . "
 		
-		WHERE	p2.page_namespace=" . (int)$toolSettings['talkspace'] . "
-		AND		p1.page_title IS NULL
+		WHERE " . $p2NsSql . "
+		AND   p1.page_title IS NULL
 		" . implode( ' ', $whereClauses ) . "
 
 		" . $orderClause . "
@@ -83,7 +94,10 @@ function ot2_talkSelect( $oddNSs ) {
 	$talkSelect = '<label for="namespace">' . _g( 'namespace' ) . '</label>';
 	if ( !empty( $oddNSs ) ) {
 		$talkSelect .= '<select name="namespace">';
-		foreach( $oddNSs as $nsID => $nsName ) {
+		if ( $Params['namespace'] === '*' ) {
+			$talkSelect .= '<option value="*" selected="selected">all (except user talk)</option>';
+		}
+		foreach ( $oddNSs as $nsID => $nsName ) {
 			$attr = '';
 			if ( isset( $Params['namespace'] ) && $Params['namespace'] == $nsID ) {
 				$attr = ' selected="selected"';
@@ -102,7 +116,7 @@ function ot2_limitSelect(){
 	global $toolSettings, $Params;
 
 	$limitSelect = '<label for="limit">' . _( 'limit' ) . '</label><select name="limit">';
-	foreach( $toolSettings['limits'] as $limit ) {
+	foreach ( $toolSettings['limits'] as $limit ) {
 		$attr = '';
 		if ( $Params['limit'] == $limit ) {
 			$attr = ' selected="selected"';
@@ -149,7 +163,7 @@ function ot2_renderOutput( $dbResults, $dbname, $oddNSs ) {
 				'action' => 'history',
 			);
 			$p_viewsubject = array(
-				'title' => $allnamespaces[$toolSettings['subjectspace']] . ':' . $res->page_title,
+				'title' => $allnamespaces[$res->page_namespace-1] . ':' . $res->page_title,
 				'redirect' => 'no',
 			);
 			$p_links = array(
@@ -164,7 +178,7 @@ function ot2_renderOutput( $dbResults, $dbname, $oddNSs ) {
 				'wpReason' => $deleteSummary,
 			);
 			$globalUsage = '';
-			if ( $Params['wikidb'] == 'commonswiki_p' && $toolSettings['subjectspace'] == 6  ) {
+			if ( $Params['wikidb'] == 'commonswiki_p' && ( $res->page_namespace - 1 ) == 6  ) {
 				$p_globalusage = array(
 					'title' => 'Special:GlobalUsage',
 					'target' => $res->page_title,
