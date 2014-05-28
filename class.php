@@ -33,6 +33,7 @@ class OrphanTalk extends KrToolBaseClass {
 
 	protected function showForm() {
 		global $kgBaseTool, $I18N;
+		$section = new KfLogSection( __METHOD__ );
 
 		$wikiOptionsHtml = kfGetAllWikiOptionHtml( array( 'current' => $this->params['wiki'] ) );
 
@@ -40,7 +41,8 @@ class OrphanTalk extends KrToolBaseClass {
 		// Namespace dropdown is usually populated client-side with AJAX when using the form.
 		// If a wiki has been set in the request already, prepopulate it.
 		if ( $this->params['wiki'] ) {
-			$namespaces = $this->getNamespaces( LabsDB::getDbInfo( $this->params['wiki'] ) );
+			$wikiInfo = LabsDB::getDbInfo( $this->params['wiki'] );
+			$namespaces = $this->getNamespaces( $wikiInfo['url'] );
 			foreach ( $namespaces as $nsId => $nsText ) {
 				if ( $nsId > 0 && $nsId % 2 ) {
 					$nsOptionsHtml .= Html::element( 'option', array(
@@ -152,6 +154,7 @@ class OrphanTalk extends KrToolBaseClass {
 
 	protected function execute() {
 		global $kgBaseTool, $I18N;
+		$section = new KfLogSection( __METHOD__ );
 
 		// Required
 		if ( !$this->params['wiki'] || !$this->params['ns'] ) {
@@ -215,7 +218,7 @@ class OrphanTalk extends KrToolBaseClass {
 	protected function getPageActionLinks( Array &$wikiInfo, Array &$pageRow ) {
 		global $I18N;
 
-		$namespaces = $this->getNamespaces( $wikiInfo );
+		$namespaces = $this->getNamespaces( $wikiInfo['url'] );
 		$links = array(
 			'view' => array(
 				'url' => $wikiInfo['url'] . '/w/index.php?' . http_build_query( array(
@@ -321,12 +324,11 @@ class OrphanTalk extends KrToolBaseClass {
 	}
 
 	/**
-	 * @param Array $wikiInfo
-	 * @return array|bool
+	 * @param string $url
+	 * @return array
 	 */
-	protected function getNamespaces( Array &$wikiInfo ) {
-		// @todo Cache this
-		$data = kfApiRequest( $wikiInfo['url'], array(
+	protected function fetchNamespaces( $url ) {
+		$data = kfApiRequest( $url, array(
 			'meta' => 'siteinfo',
 			'siprop' => 'namespaces',
 		) );
@@ -340,5 +342,23 @@ class OrphanTalk extends KrToolBaseClass {
 			$namespaces[ $ns['id'] ] = $ns['*'];
 		}
 		return $namespaces;
+	}
+
+	/**
+	 * @param string $url
+	 * @return array
+	 */
+	protected function getNamespaces( $url ) {
+		global $kgCache;
+		$section = new KfLogSection( __METHOD__ );
+
+		$key = kfCacheKey( 'orphantalk', 'mwapi', $url, 'namespaces' );
+		$value = $kgCache->get( $key );
+		if ( $value === false ) {
+			$value = $this->fetchNamespaces( $url );
+			$kgCache->set( $key, $value, 3600 );
+		}
+
+		return $value;
 	}
 }
