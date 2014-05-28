@@ -20,7 +20,7 @@ class OrphanTalk extends KrToolBaseClass {
 		$this->params['ns'] = $kgReq->hasKey( 'ns' ) ? $kgReq->getInt( 'ns' ) : null;
 		$this->params['hideredirects'] = $kgReq->hasKey( 'hideredirects' );
 		$this->params['hidesubpages'] = $kgReq->hasKey( 'hidesubpages' );
-		$this->params['limit'] = $kgReq->getInt( 'limit', '25' );
+		$this->params['limit'] = $kgReq->getInt( 'limit', 25 );
 
 		$this->showForm();
 		if ( $kgReq->wasPosted() ) {
@@ -52,7 +52,7 @@ class OrphanTalk extends KrToolBaseClass {
 		}
 
 		$limitOptionsHtml = '';
-		foreach ( array( '10', '25', '50', '100' ) as $limit ) {
+		foreach ( array( 10, 25, 50, 100 ) as $limit ) {
 			$limitOptionsHtml .= Html::element( 'option', array(
 				'value' => $limit,
 				'selected' => $limit === $this->params['limit'],
