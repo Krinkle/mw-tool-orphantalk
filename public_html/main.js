@@ -75,7 +75,8 @@
 	});
 
 	// Remember the user's choise of wiki between sessions
-	if (!KRINKLE.baseTool.req.wasPosted) {
+	// But don't override values reflected after POST or preset via GET query
+	if (!KRINKLE.baseTool.req.wasPosted && !location.search) {
 		wiki = localStorage.getItem('orpht-form-wiki');
 		limit = localStorage.getItem('orpht-form-limit');
 		if (limit) {
