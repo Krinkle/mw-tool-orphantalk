@@ -175,7 +175,10 @@ class OrphanTalk extends KrToolBaseClass {
 
 		$wikiInfo = LabsDB::getDbInfo( $this->params['wiki'] );
 
-		$html = Html::openElement( 'table', array( 'class' => 'table table-bordered table-hover table-xs-stack' ) )
+		$html = Html::openElement( 'table', array( 'class' => 'table table-bordered table-hover table-xs-stack ot-table' ) )
+			. '<colgroup>'
+			. '<col class="col-sm-1"></col><col class="col-sm-4"></col><col class="col-sm-7"></col>'
+			. '</colgroup>'
 			. '<thead><tr>'
 			. Html::element( 'th', array(), '#' )
 			. Html::element( 'th', array( 'colspan' => '2' ), $I18N->msg( 'page' ) )
@@ -187,6 +190,7 @@ class OrphanTalk extends KrToolBaseClass {
 				. Html::element( 'td', array(), $i +1 )
 				. Html::openElement( 'td', array(
 					'class' => array(
+						'ot-cell-trim',
 						'ot-page',
 						'ot-page-redirect' => !!$row['page_is_redirect'],
 					),

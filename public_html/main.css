@@ -5,3 +5,13 @@
 .ot-page .glyphicon {
 	opacity: 0.5;
 }
+
+.ot-table {
+	table-layout: fixed;
+}
+
+.ot-table .ot-cell-trim {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
