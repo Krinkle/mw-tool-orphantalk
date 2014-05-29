@@ -175,7 +175,7 @@ class OrphanTalk extends KrToolBaseClass {
 
 		$wikiInfo = LabsDB::getDbInfo( $this->params['wiki'] );
 
-		$html = Html::openElement( 'table', array( 'class' => 'table table-bordered table-hover' ) )
+		$html = Html::openElement( 'table', array( 'class' => 'table table-bordered table-hover table-xs-stack' ) )
 			. '<thead><tr>'
 			. Html::element( 'th', array(), '#' )
 			. Html::element( 'th', array( 'colspan' => '2' ), $I18N->msg( 'page' ) )
