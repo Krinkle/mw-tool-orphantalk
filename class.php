@@ -336,14 +336,14 @@ class OrphanTalk extends KrToolBaseClass {
 			'meta' => 'siteinfo',
 			'siprop' => 'namespaces',
 		) );
-		if ( !isset( $data['query']['namespaces'] ) ) {
+		if ( !isset( $data->query->namespaces ) ) {
 			// @todo Handle error
 			return array();
 		}
-		$data = $data['query']['namespaces'];
+		$data = $data->query->namespaces;
 		$namespaces = array();
 		foreach ( $data as $i => &$ns ) {
-			$namespaces[ $ns['id'] ] = $ns['*'];
+			$namespaces[ $ns->id ] = $ns->{"*"};
 		}
 		return $namespaces;
 	}
