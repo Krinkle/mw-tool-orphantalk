@@ -329,7 +329,7 @@ class OrphanTalk extends KrToolBaseClass {
 
 	/**
 	 * @param string $url
-	 * @return array
+	 * @return array|bool
 	 */
 	protected function fetchNamespaces( $url ) {
 		$data = kfApiRequest( $url, array(
@@ -337,8 +337,7 @@ class OrphanTalk extends KrToolBaseClass {
 			'siprop' => 'namespaces',
 		) );
 		if ( !isset( $data->query->namespaces ) ) {
-			// @todo Handle error
-			return array();
+			return false;
 		}
 		$data = $data->query->namespaces;
 		$namespaces = array();
@@ -360,7 +359,13 @@ class OrphanTalk extends KrToolBaseClass {
 		$value = $kgCache->get( $key );
 		if ( $value === false ) {
 			$value = $this->fetchNamespaces( $url );
-			$kgCache->set( $key, $value, 3600 );
+			if ( $value !== false ) {
+				$kgCache->set( $key, $value, 3600 );
+			} else {
+				// Cache error no more than 5 minutes
+				$value = array();
+				$kgCache->set( $key, $value, 60 * 50 );
+			}
 		}
 
 		return $value;
