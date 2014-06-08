@@ -41,8 +41,7 @@ class OrphanTalk extends KrToolBaseClass {
 		// Namespace dropdown is usually populated client-side with AJAX when using the form.
 		// If a wiki has been set in the request already, prepopulate it.
 		if ( $this->params['wiki'] ) {
-			$wikiInfo = LabsDB::getDbInfo( $this->params['wiki'] );
-			$namespaces = $this->getNamespaces( $wikiInfo['url'] );
+			$namespaces = $this->getNamespaces( $this->params['wiki'] );
 			foreach ( $namespaces as $nsId => $nsText ) {
 				if ( $nsId > 0 && $nsId % 2 ) {
 					$nsOptionsHtml .= Html::element( 'option', array(
@@ -222,7 +221,7 @@ class OrphanTalk extends KrToolBaseClass {
 	protected function getPageActionLinks( Array &$wikiInfo, Array &$pageRow ) {
 		global $I18N;
 
-		$namespaces = $this->getNamespaces( $wikiInfo['url'] );
+		$namespaces = $this->getNamespaces( $wikiInfo['dbname'] );
 		$links = array(
 			'view' => array(
 				'url' => $wikiInfo['url'] . '/w/index.php?' . http_build_query( array(
@@ -329,45 +328,9 @@ class OrphanTalk extends KrToolBaseClass {
 
 	/**
 	 * @param string $url
-	 * @return array|bool
-	 */
-	protected function fetchNamespaces( $url ) {
-		$data = kfApiRequest( $url, array(
-			'meta' => 'siteinfo',
-			'siprop' => 'namespaces',
-		) );
-		if ( !isset( $data->query->namespaces ) ) {
-			return false;
-		}
-		$data = $data->query->namespaces;
-		$namespaces = array();
-		foreach ( $data as $i => &$ns ) {
-			$namespaces[ $ns->id ] = $ns->{"*"};
-		}
-		return $namespaces;
-	}
-
-	/**
-	 * @param string $url
 	 * @return array
 	 */
-	protected function getNamespaces( $url ) {
-		global $kgCache;
-		$section = new KfLogSection( __METHOD__ );
-
-		$key = kfCacheKey( 'orphantalk', 'mwapi', $url, 'namespaces' );
-		$value = $kgCache->get( $key );
-		if ( $value === false ) {
-			$value = $this->fetchNamespaces( $url );
-			if ( $value !== false ) {
-				$kgCache->set( $key, $value, 3600 );
-			} else {
-				// Cache error no more than 5 minutes
-				$value = array();
-				$kgCache->set( $key, $value, 60 * 50 );
-			}
-		}
-
-		return $value;
+	protected function getNamespaces( $dbname ) {
+		return Wiki::byDbname( $dbname )->getNamespaces();
 	}
 }
