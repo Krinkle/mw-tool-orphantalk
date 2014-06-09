@@ -172,7 +172,7 @@ class OrphanTalk extends KrToolBaseClass {
 			return;
 		}
 
-		$wikiInfo = LabsDB::getDbInfo( $this->params['wiki'] );
+		$wiki = Wiki::byDbname( $this->params['wiki'] );
 
 		$html = Html::openElement( 'table', array( 'class' => 'table table-bordered table-hover table-xs-stack ot-table' ) )
 			. '<colgroup>'
@@ -184,7 +184,7 @@ class OrphanTalk extends KrToolBaseClass {
 			. '</tr></thead><tbody>';
 
 		foreach ( $rows as $i => &$row ) {
-			$links = $this->getPageActionLinks( $wikiInfo, $row );
+			$links = $this->getPageActionLinks( $wiki, $row );
 			$html .= '<tr>'
 				. Html::element( 'td', array(), $i +1 )
 				. Html::openElement( 'td', array(
@@ -218,20 +218,20 @@ class OrphanTalk extends KrToolBaseClass {
 		$kgBaseTool->addOut( $html );
 	}
 
-	protected function getPageActionLinks( Array &$wikiInfo, Array &$pageRow ) {
+	protected function getPageActionLinks( Wiki $wiki, Array &$pageRow ) {
 		global $I18N;
 
-		$namespaces = $this->getNamespaces( $wikiInfo['dbname'] );
+		$namespaces = $wiki->getNamespaces();
 		$links = array(
 			'view' => array(
-				'url' => $wikiInfo['url'] . '/w/index.php?' . http_build_query( array(
+				'url' => $wiki->getUrl( array(
 					'curid' => $pageRow['page_id'],
 					'redirect' => $pageRow['page_is_redirect'] ? 'no' : null,
 				) ),
 				'label' => $I18N->msg( 'tools-view' ),
 			),
 			'delete' => array(
-				'url' => $wikiInfo['url'] . '/w/index.php?' . http_build_query( array(
+				'url' => $wiki->getUrl( array(
 					'curid' => $pageRow['page_id'],
 					'action' => 'delete',
 					'wpReason' => $I18N->msg( 'deletesummary', array(
@@ -241,27 +241,24 @@ class OrphanTalk extends KrToolBaseClass {
 				'label' => $I18N->msg( 'tools-delete' ),
 			),
 			'links' => array(
-				'url' => $wikiInfo['url'] . '/w/index.php?' . http_build_query( array(
-					'title' => 'Special:WhatLinksHere',
+				'url' => $wiki->getPageUrl( 'Special:WhatLinksHere', array(
 					'target' => $namespaces[ $pageRow['page_namespace'] ] . ':' . $pageRow['page_title'],
 				) ),
 				'label' => $I18N->msg( 'tools-links' ),
 			),
 			'subject' => array(
-				'url' => $wikiInfo['url'] . '/w/index.php?' . http_build_query( array(
-					'title' => $namespaces[ $pageRow['page_namespace'] - 1 ] . ':' . $pageRow['page_title'],
-				) ),
+				'url' => $wiki->getPageUrl( $namespaces[ $pageRow['page_namespace'] - 1 ] . ':' . $pageRow['page_title'] ),
 				'label' => $I18N->msg( 'tools-subject' ),
 			),
 			'hist' => array(
-				'url' => $wikiInfo['url'] . '/w/index.php?' . http_build_query( array(
+				'url' => $wiki->getUrl( array(
 					'curid' => $pageRow['page_id'],
 					'action' => 'history',
 				) ),
 				'label' => $I18N->msg( 'tools-hist' ),
 			),
 			'curr' => array(
-				'url' => $wikiInfo['url'] . '/w/index.php?' . http_build_query( array(
+				'url' => $wiki->getUrl( array(
 					'curid' => $pageRow['page_id'],
 					'diff' => 'curr',
 				) ),
@@ -272,10 +269,9 @@ class OrphanTalk extends KrToolBaseClass {
 		// Add link to GlobalUsage in case of File_talk pages on Commons.
 		// Sometimes people create talk pages for files that may not or no
 		// longer exist on Commons, and yet somehow referenced from local wikis.
-		if ( $wikiInfo['dbname'] === 'commonswiki' && $pageRow['page_namespace']-1 == 6 ) {
+		if ( $wiki->getDbname() === 'commonswiki' && $pageRow['page_namespace']-1 == 6 ) {
 			$links['globalusage'] = array(
-				'url' => $wikiInfo['url'] . '/w/index.php?' . http_build_query( array(
-					'title' => 'Special:WhatLinksHere',
+				'url' => $wiki->getPageUrl( 'Special:WhatLinksHere', array(
 					'target' => $pageRow['page_title'],
 				) ),
 				'label' => $I18N->msg( 'tools-globalusage' ),
