@@ -16,7 +16,16 @@ class OrphanTalk extends KrToolBaseClass {
 
 		$kgBaseTool->addOut( '<div class="container">' );
 
-		$this->params['wiki'] = $kgReq->hasKey( 'wiki' ) ? $kgReq->getVal( 'wiki' ) : null;
+		if ( $kgReq->hasKey( 'wiki' ) ) {
+			$this->params['wiki'] = $kgReq->getVal( 'wiki' );
+		} elseif ( $kgReq->hasKey( 'wikidb' ) ) {
+			// Backwards-compatibility for redirects from toolserver.org
+			// Example: https://toolserver.org/~krinkle/OrphanTalk2.php?wikidb=nlwiki_p
+			$this->params['wiki'] = preg_replace( '/_p$/', '', $kgReq->getVal( 'wikidb' ) );
+		} else {
+			$this->params['wiki'] = null;
+		}
+
 		$this->params['ns'] = $kgReq->hasKey( 'ns' ) ? $kgReq->getInt( 'ns' ) : null;
 		$this->params['hideredirects'] = $kgReq->hasKey( 'hideredirects' );
 		$this->params['hidesubpages'] = $kgReq->hasKey( 'hidesubpages' );
