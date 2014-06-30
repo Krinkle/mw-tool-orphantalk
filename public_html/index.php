@@ -38,8 +38,8 @@ $toolConfig = array(
 	'requireJS' => true,
 );
 
-$kgBaseTool = BaseTool::newFromArray( $toolConfig );
-$kgBaseTool->setSourceInfoGithub( 'Krinkle', 'mw-tool-orphantalk', dirname( __DIR__ ) );
+$kgBase = BaseTool::newFromArray( $toolConfig );
+$kgBase->setSourceInfoGithub( 'Krinkle', 'mw-tool-orphantalk', dirname( __DIR__ ) );
 
 /**
  * Output
@@ -47,4 +47,4 @@ $kgBaseTool->setSourceInfoGithub( 'Krinkle', 'mw-tool-orphantalk', dirname( __DI
  */
 
 $kgTool->run();
-$kgBaseTool->flushMainOutput();
+$kgBase->flushMainOutput();

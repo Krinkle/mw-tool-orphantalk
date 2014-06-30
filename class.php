@@ -10,11 +10,11 @@ class OrphanTalk extends KrToolBaseClass {
 	protected $params = null;
 
 	protected function show() {
-		global $kgBaseTool, $I18N, $kgReq;
+		global $kgBase, $I18N, $kgReq;
 
-		$kgBaseTool->setLayout( 'header', array( 'captionText' => $I18N->msg( 'description' ) ) );
+		$kgBase->setLayout( 'header', array( 'captionText' => $I18N->msg( 'description' ) ) );
 
-		$kgBaseTool->addOut( '<div class="container">' );
+		$kgBase->addOut( '<div class="container">' );
 
 		if ( $kgReq->hasKey( 'wiki' ) ) {
 			$this->params['wiki'] = $kgReq->getVal( 'wiki' );
@@ -37,11 +37,11 @@ class OrphanTalk extends KrToolBaseClass {
 		}
 
 		// Close wrapping container
-		$kgBaseTool->addOut( '</div>' );
+		$kgBase->addOut( '</div>' );
 	}
 
 	protected function showForm() {
-		global $kgBaseTool, $I18N;
+		global $kgBase, $I18N;
 		$section = new KfLogSection( __METHOD__ );
 
 		$wikiOptionsHtml = kfGetAllWikiOptionHtml( array( 'current' => $this->params['wiki'] ) );
@@ -69,7 +69,7 @@ class OrphanTalk extends KrToolBaseClass {
 			), $limit );
 		}
 
-		$kgBaseTool->addOut(
+		$kgBase->addOut(
 			'<form class="form-horizontal" role="form" id="ot-form" method="post">'
 			. '<fieldset>'
 			. Html::element( 'legend', array(), $I18N->msg( 'form-legend-settings', 'krinkle' ) )
@@ -161,7 +161,7 @@ class OrphanTalk extends KrToolBaseClass {
 	}
 
 	protected function execute() {
-		global $kgBaseTool, $I18N;
+		global $kgBase, $I18N;
 		$section = new KfLogSection( __METHOD__ );
 
 		// Required
@@ -173,11 +173,11 @@ class OrphanTalk extends KrToolBaseClass {
 			throw new Exception( 'Talk namespace must have an odd non-zero id.' );
 		}
 
-		$kgBaseTool->addOut( Html::element( 'h2', array( 'id' => 'output' ), $I18N->msg( 'output' ) ) );
+		$kgBase->addOut( Html::element( 'h2', array( 'id' => 'output' ), $I18N->msg( 'output' ) ) );
 
 		$rows = $this->fetchOrphans();
 		if ( !count( $rows ) ) {
-			$kgBaseTool->addOut( Html::element( 'p', array( 'class' => 'lead text-muted' ), $I18N->msg( 'noresults' ) ) );
+			$kgBase->addOut( Html::element( 'p', array( 'class' => 'lead text-muted' ), $I18N->msg( 'noresults' ) ) );
 			return;
 		}
 
@@ -224,7 +224,7 @@ class OrphanTalk extends KrToolBaseClass {
 				. '</tr>';
 		}
 		$html .= '</tbody></table>';
-		$kgBaseTool->addOut( $html );
+		$kgBase->addOut( $html );
 	}
 
 	protected function getPageActionLinks( Wiki $wiki, Array &$pageRow ) {
