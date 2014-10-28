@@ -113,6 +113,7 @@ class OrphanTalk extends KrToolBaseClass {
 						'type' => 'checkbox',
 						'name' => 'hideredirects',
 						'checked' => $this->params['hideredirects'],
+						'id' => 'ot-form-hideredirects',
 					) )
 					. ' ' . htmlspecialchars( $I18N->msg( 'hideredirects' ) )
 					. Html::closeElement( 'label' )

@@ -1,6 +1,7 @@
 /*global $, KRINKLE */
 (function () {
-	var supported, wiki, limit, pNsInit, $msgs, $form, $wiki, $ns, $limit, $submit;
+	var supported, wiki, limit, hidesubpages, hideredirects, pNsInit,
+		$msgs, $form, $wiki, $ns, $hidesubpages, $hideredirects, $limit, $submit;
 
 	// Enhancements only for modern and up-to-date browsers.
 	supported = !!(
@@ -19,6 +20,8 @@
 	$form = $('#ot-form');
 	$wiki = $('#ot-form-wiki');
 	$ns = $('#ot-form-ns');
+	$hidesubpages = $('#ot-form-hidesubpages');
+	$hideredirects = $('#ot-form-hideredirects');
 	$limit = $('#ot-form-limit');
 	$submit = $('#ot-form-submit');
 
@@ -78,10 +81,9 @@
 	// But don't override values reflected after POST or preset via GET query
 	if (!KRINKLE.baseTool.req.wasPosted && !location.search) {
 		wiki = localStorage.getItem('orpht-form-wiki');
+		hideredirects = localStorage.getItem('orpht-form-hideredirects');
+		hidesubpages = localStorage.getItem('orpht-form-hidesubpages');
 		limit = localStorage.getItem('orpht-form-limit');
-		if (limit) {
-			$limit.val(limit);
-		}
 		if (wiki) {
 			$wiki.val(wiki);
 
@@ -90,10 +92,27 @@
 			// (e.g. aawiki) and we wait for the user to make a choice first.
 			pNsInit = handleWikiSelect($wiki.get(0));
 		}
+		if (hideredirects === 'true') {
+			$hideredirects.prop('checked', true);
+		}
+		if (hidesubpages === 'true') {
+			$hidesubpages.prop('checked', true);
+		}
+		if (limit) {
+			$limit.val(limit);
+		}
 	}
 
 	$wiki.on('change', function () {
 		localStorage.setItem('orpht-form-wiki', this.value);
+	});
+
+	$hideredirects.on('change', function () {
+		localStorage.setItem('orpht-form-hideredirects', String(this.checked));
+	});
+
+	$hidesubpages.on('change', function () {
+		localStorage.setItem('orpht-form-hidesubpages', String(this.checked));
 	});
 
 	$limit.on('change', function () {
