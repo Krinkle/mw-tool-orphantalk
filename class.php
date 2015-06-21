@@ -123,15 +123,15 @@ class OrphanTalk extends KrToolBaseClass {
 			. '<div class="form-group">'
 				. '<div class="col-sm-offset-2 col-sm-5">'
 					. '<div class="checkbox">'
+					. Html::openElement( 'label' )
 					. Html::element( 'input', array(
 						'type' => 'checkbox',
 						'name' => 'hidesubpages',
 						'checked' => $this->params['hidesubpages'],
 						'id' => 'ot-form-hidesubpages',
 					) )
-					. Html::element( 'label', array(
-						'for' => 'ot-form-hidesubpages',
-					), $I18N->msg( 'hidesubpages' ) )
+					. ' ' . htmlspecialchars( $I18N->msg( 'hidesubpages' ) )
+					. Html::closeElement( 'label' )
 					. '</div>'
 				. '</div>'
 			. '</div>'
