@@ -122,5 +122,8 @@
 	// Prevent Chosen from hardcode-copying the width,
 	// as that causes issues when the width changes dynamically
 	// through the responsive stylesheet.
-	$('.chosen-select').chosen({ 'width': '100%' });
+	$('.chosen-select').chosen({
+		width: '100%',
+		search_contains: true
+	});
 }());
