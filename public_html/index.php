@@ -2,7 +2,7 @@
 /**
  * Main index
  *
- * @author Timo Tijhof, 2011-2014
+ * @author Timo Tijhof
  * @license http://krinkle.mit-license.org/
  * @package mw-tool-orphantalk
  */
@@ -11,17 +11,15 @@
  * Configuration
  * -------------------------------------------------
  */
-// BaseTool & Localization
-require_once __DIR__ . '/../lib/basetool/InitTool.php';
-require_once KR_TSINT_START_INC;
 
-// Class for this tool
+require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../class.php';
-$kgTool = new OrphanTalk();
+require_once __DIR__ . '/../config.php';
 
+$tool = new OrphanTalk();
 $I18N = new Intuition( 'orphantalk2' );
 
-$toolConfig = array(
+$kgBase = BaseTool::newFromArray( array(
 	'displayTitle' => $I18N->msg( 'title' ),
 	'remoteBasePath' => dirname( $kgConf->getRemoteBase() ). '/',
 	'revisionId' => '0.3.0',
@@ -36,9 +34,7 @@ $toolConfig = array(
 		'main.js',
 	),
 	'requireJS' => true,
-);
-
-$kgBase = BaseTool::newFromArray( $toolConfig );
+) );
 $kgBase->setSourceInfoGithub( 'Krinkle', 'mw-tool-orphantalk', dirname( __DIR__ ) );
 
 /**
@@ -46,5 +42,5 @@ $kgBase->setSourceInfoGithub( 'Krinkle', 'mw-tool-orphantalk', dirname( __DIR__ 
  * -------------------------------------------------
  */
 
-$kgTool->run();
+$tool->run();
 $kgBase->flushMainOutput();
