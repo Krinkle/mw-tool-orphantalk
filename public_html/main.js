@@ -68,8 +68,9 @@
 
 	function handleWikiSelect(node) {
 		var option = node.options[ node.selectedIndex ];
-		var url = option && option.dataset.url;
-		return updateNamespaces(url);
+		if (option) {
+			updateNamespaces(option.dataset.url);
+		}
 	}
 
 	$wiki.on('change', function () {
