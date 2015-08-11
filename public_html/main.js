@@ -39,7 +39,6 @@
 	function updateNamespaces(hostname) {
 		// Fetch namespaces
 		return $.ajax({
-			// @todo Assumes all WMF wikis support HTTPS
 			// @todo Assumes script path is /w (meta_p.wiki in WMFLabs doesn't provide scriptpath)
 			url: '//' + hostname + '/w/api.php',
 			data: {
