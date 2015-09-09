@@ -18,6 +18,7 @@ require_once __DIR__ . '/../config.php';
 
 $tool = new OrphanTalk();
 $I18N = new Intuition( 'orphantalk2' );
+$I18N->registerDomain( 'orphantalk2', __DIR__ . '/../messages' );
 
 $kgBase = BaseTool::newFromArray( array(
 	'displayTitle' => $I18N->msg( 'title' ),
