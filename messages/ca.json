@@ -7,7 +7,7 @@
 		]
 	},
 	"title": "OrphanTalk",
-	"description": "Trobar pàgines de discussió orfes.",
+	"description": "Troba pàgines de discussió òrfenes.",
 	"label-wiki": "Viqui",
 	"select-wiki-first": "(primer seleccioneu un wiki)",
 	"hideredirects": "Amaga redireccions",
@@ -24,7 +24,7 @@
 	"tools-hist": "Mostra l’historial",
 	"tools-curr": "Últim canvi",
 	"tools-globalusage": "Ús del fitxer",
-	"deletesummary": "$1: Pàgina de discussió orfe",
+	"deletesummary": "$1: Pàgina de discussió òrfena",
 	"noresults": "No s'ha trobat en aquest wiki cap pàgina de discussió òrfena en aquest espai de noms que correspongui amb la vostra configuració.",
 	"resultslimited": "Els resultats es limiten a $1 pàgines."
 }

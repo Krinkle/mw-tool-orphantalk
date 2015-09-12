@@ -3,10 +3,12 @@
 		"authors": [
 			"Emperyan",
 			"Trockya",
-			"Vito Genovese"
+			"Vito Genovese",
+			"Uğurkent"
 		]
 	},
 	"title": "YalnızTartışma2",
+	"label-wiki": "Viki",
 	"select-wiki-first": "(ilk olarak bir viki seçin)",
 	"hideredirects": "Yönlendirmeleri gizle",
 	"hidesubpages": "Alt sayfaları gizle",
@@ -14,6 +16,7 @@
 	"page": "Sayfa",
 	"output": "Çıkış",
 	"update": "Güncelle",
+	"tools-view": "Görüntüle",
 	"tools-delete": "Sil",
 	"tools-links": "bağlantılar",
 	"tools-subject": "konu",
