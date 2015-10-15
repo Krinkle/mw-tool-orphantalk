@@ -4,7 +4,8 @@
 			"Olli",
 			"Silvonen",
 			"Stryn",
-			"VezonThunder"
+			"VezonThunder",
+			"Pyscowicz"
 		]
 	},
 	"title": "OrphanTalk",
@@ -19,8 +20,9 @@
 	"tools-delete": "Poista",
 	"tools-links": "linkit",
 	"tools-subject": "aihe",
-	"tools-hist": "historia",
-	"tools-curr": "nyk.",
+	"tools-hist": "Näytä historia",
+	"tools-curr": "Viimeisin muutos",
+	"tools-globalusage": "Tiedoston käyttö",
 	"deletesummary": "Yksinäisten keskustelusivujen siivous $1-työkalulla",
 	"noresults": "Asetuksesi eivät vastanneet yhtään yksinäistä keskustelusivua tässä wikissä ja tässä nimiavaruudessa.",
 	"resultslimited": "Tulokset rajoitettiin $1 sivuun."

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Tyey",
-			"아라"
+			"아라",
+			"Hwangjy9"
 		]
 	},
 	"title": "OrphanTalk2",
@@ -17,7 +18,7 @@
 	"tools-delete": "삭제",
 	"tools-links": "링크",
 	"tools-subject": "주제 문서",
-	"tools-hist": "역사",
+	"tools-hist": "역사 보기",
 	"tools-curr": "차이",
 	"tools-globalusage": "공통사용",
 	"deletesummary": "$1(을)를 통해 외톨이 토론 문서 정리",

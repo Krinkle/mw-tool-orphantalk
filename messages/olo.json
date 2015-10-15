@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Denö",
+			"Mashoi7"
+		]
+	},
+	"label-wiki": "Wiki",
+	"select-wiki-first": "(valliče ezmäi wiki)",
+	"hideredirects": "Peitä uvvellehohjavot",
+	"hidesubpages": "Peitä alisivut",
+	"limit": "Rajoita",
+	"page": "Sivu",
+	"tooltip-redirect": "Tämä sivu on uvvellehohjavo",
+	"output": "Tulos",
+	"update": "Päivitä",
+	"tools-view": "Ozuta",
+	"tools-delete": "Ota iäre",
+	"tools-links": "Mi ohjuau tänne",
+	"tools-subject": "Projektusivu",
+	"tools-hist": "Ozuta histourii",
+	"tools-curr": "Jälgimäine muutos",
+	"tools-globalusage": "Failan käyttö",
+	"resultslimited": "Tulokset rajattih $1 sivuh."
+}
