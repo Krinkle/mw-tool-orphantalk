@@ -5,7 +5,8 @@
 			"Zygimantus"
 		]
 	},
-	"title": "OrphanTalk2",
+	"title": "OrphanTalk",
+	"description": "Rasti vienišus aptarimo puslapius.",
 	"label-wiki": "Viki",
 	"select-wiki-first": "(pirma pasirinkite wiki)",
 	"hideredirects": "Slėpti peradresavimus",
@@ -22,7 +23,7 @@
 	"tools-hist": "Rodyti istoriją",
 	"tools-curr": "Paskutinis pakeitimas",
 	"tools-globalusage": "Failo naudojimas",
-	"deletesummary": "Valomi nereikalingi aptarimo puslapiai, naudojant $1",
+	"deletesummary": "$1: Vienišas aptarimo puslapis",
 	"noresults": "Nerasta nenaudojamų aptarimų puslapių šioje wiki vardų srityje pagal jūsų nustatymus.",
 	"resultslimited": "Rezultatų limitas buvo $1 puslapių."
 }

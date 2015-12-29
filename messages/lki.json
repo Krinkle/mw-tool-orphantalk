@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hosseinblue"
+		]
+	},
+	"title": "بحث‌یتیم",
+	"description": "یافتن صفحات بحث یتیم",
+	"label-wiki": "ویکی",
+	"select-wiki-first": "(اول یإگلة ویکی انتخاب کةن)",
+	"hideredirects": "پنهان کردن تغییر مسیرها",
+	"hidesubpages": "پنهان کردن زیرصفحه‌ها",
+	"limit": "تعداد",
+	"page": "وةڵگة/پەڕە",
+	"tooltip-redirect": "این صفحه تغییر مسیر است",
+	"output": "خروجی",
+	"update": "تازۀسازی",
+	"tools-view": "دیین/سئرکردن",
+	"tools-delete": "حۀذف کردن/پاک کردن",
+	"tools-links": "پیوند وۀ ائرة",
+	"tools-subject": "موضوع وةڵگة",
+	"tools-hist": "سئرکردن تاریخچۀ-ویرگار",
+	"tools-curr": "تغییرات اخیر",
+	"tools-globalusage": "استفادۀ إژ پۀروۀنده",
+	"deletesummary": "$1: صفحات بحث یتیم",
+	"noresults": "هیچ صفحهٔ بحث یتیمی در این ویکی و در این فضای نام، مطابق با تنظیمات شما وجود ندارد.",
+	"resultslimited": "نتایج به $1 صفحه محدود بود."
+}

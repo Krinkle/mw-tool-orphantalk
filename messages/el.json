@@ -6,16 +6,23 @@
 			"Glavkos"
 		]
 	},
+	"description": "Βρείτε ορφανές σελίδες συζήτησης.",
+	"label-wiki": "Wiki",
 	"select-wiki-first": "(επιλέξτε πρώτα ένα wiki)",
 	"hideredirects": "Απόκρυψη ανακατευθύνσεων",
 	"hidesubpages": "Απόκρυψη υποσελιδών",
 	"limit": "Όριο",
 	"page": "Άρθρο",
+	"tooltip-redirect": "Αυτή η σελίδα είναι μια ανακατεύθυνση",
+	"output": "Έξοδος",
 	"update": "Ενημέρωση",
-	"tools-delete": "διαγραφή",
-	"tools-links": "σύνδεσμοι",
-	"tools-subject": "θέμα",
-	"tools-hist": "ιστορικό",
-	"tools-curr": "τρέχουσα",
-	"tools-globalusage": "καθολική χρήση"
+	"tools-view": "Προβολή",
+	"tools-delete": "Διαγραφή",
+	"tools-links": "Τι συνδέει εδώ",
+	"tools-subject": "Θεματική σελίδα",
+	"tools-hist": "Προβολή ιστορικού",
+	"tools-curr": "Τελευταία αλλαγή",
+	"tools-globalusage": "Χρήση αρχείου",
+	"deletesummary": "$1: Ορφανή σελίδα συζήτησης",
+	"resultslimited": "Τα αποτελέσματα περιορίστηκαν σε $1 σελίδες."
 }
