@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"DCLXVI"
+			"DCLXVI",
+			"Vodnokon4e"
 		]
 	},
 	"update": "Обновяване",
-	"tools-delete": "изтриване",
-	"tools-hist": "ист",
-	"tools-curr": "тек"
+	"tools-delete": "Изтриване",
+	"tools-hist": "Показване на историята",
+	"tools-curr": "Последна промяна"
 }
