@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hosseinblue"
+			"Hosseinblue",
+			"Lakzon"
 		]
 	},
 	"title": "بحث‌یتیم",
@@ -11,7 +12,7 @@
 	"hideredirects": "پنهان کردن تغییر مسیرها",
 	"hidesubpages": "پنهان کردن زیرصفحه‌ها",
 	"limit": "تعداد",
-	"page": "وةڵگة/پەڕە",
+	"page": "وةڵگە(پەڕە)",
 	"tooltip-redirect": "این صفحه تغییر مسیر است",
 	"output": "خروجی",
 	"update": "تازۀسازی",
