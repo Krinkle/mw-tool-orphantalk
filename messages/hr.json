@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ex13",
-			"Teoo3"
+			"Teoo3",
+			"Vrhnje"
 		]
 	},
 	"title": "OrphanTalk",
@@ -13,6 +14,7 @@
 	"page": "Stranica",
 	"output": "Odredište",
 	"update": "Osvježi",
+	"tools-view": "Vidi",
 	"tools-delete": "Izbriši",
 	"tools-links": "Što vodi ovamo",
 	"tools-subject": "Stranica predmeta",
