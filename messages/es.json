@@ -4,11 +4,12 @@
 			"AwesomeOrange89",
 			"Fitoschido",
 			"Macofe",
-			"Joaquin1001"
+			"Joaquin1001",
+			"Steef"
 		]
 	},
 	"title": "OrphanTalk",
-	"description": "Encontrar páginas de discusión huérfanas.",
+	"description": "Encuentre páginas de discusión huérfanas.",
 	"label-wiki": "Wiki",
 	"select-wiki-first": "(selecciona primero una wiki)",
 	"hideredirects": "Ocultar redirecciones",
@@ -20,12 +21,12 @@
 	"update": "Actualizar",
 	"tools-view": "Ver",
 	"tools-delete": "Borrar",
-	"tools-links": "Lo que enlaza aquí",
+	"tools-links": "Que enlaza aquí",
 	"tools-subject": "Página de asunto",
 	"tools-hist": "Ver historial",
 	"tools-curr": "Último cambio",
 	"tools-globalusage": "Usos del archivo",
 	"deletesummary": "$1: página de discusión huérfana",
 	"noresults": "Ninguna página de discusión huérfana en este wiki, en este espacio de nombres coinciden con tu configuración.",
-	"resultslimited": "Los resultados se limitan a $1 páginas."
+	"resultslimited": "Resultados fueron limitado a $1 páginas."
 }
