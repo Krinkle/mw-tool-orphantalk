@@ -9,7 +9,7 @@
 		]
 	},
 	"title": "OrphanTalk",
-	"description": "Encuentre páginas de discusión huérfanas.",
+	"description": "Encuentra páginas de discusión huérfanas.",
 	"label-wiki": "Wiki",
 	"select-wiki-first": "(selecciona primero una wiki)",
 	"hideredirects": "Ocultar redirecciones",
@@ -21,12 +21,12 @@
 	"update": "Actualizar",
 	"tools-view": "Ver",
 	"tools-delete": "Borrar",
-	"tools-links": "Que enlaza aquí",
+	"tools-links": "Lo que enlaza aquí",
 	"tools-subject": "Página de asunto",
 	"tools-hist": "Ver historial",
 	"tools-curr": "Último cambio",
 	"tools-globalusage": "Usos del archivo",
 	"deletesummary": "$1: página de discusión huérfana",
 	"noresults": "Ninguna página de discusión huérfana en este wiki, en este espacio de nombres coinciden con tu configuración.",
-	"resultslimited": "Resultados fueron limitado a $1 páginas."
+	"resultslimited": "Se limitaron los resultados a $1 páginas."
 }
