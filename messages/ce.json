@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Умар"
+			"Умар",
+			"Исмаил Садуев"
 		]
 	},
 	"title": "OrphanTalk",
@@ -10,7 +11,7 @@
 	"update": "Карлаяккха",
 	"tools-view": "Хьажар",
 	"tools-delete": "ДӀаяккха",
-	"tools-links": "Хьажоргаш кхузе",
+	"tools-links": "Кхуза хьажоргаш",
 	"tools-subject": "Коьрта агӀо",
 	"tools-hist": "Исторега хьажар",
 	"tools-curr": "ТӀаьххьара хийцамаш",
