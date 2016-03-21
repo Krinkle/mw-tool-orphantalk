@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Anakmalaysia"
+			"Anakmalaysia",
+			"Yusozim"
 		]
 	},
 	"title": "OrphanTalk",
@@ -16,7 +17,7 @@
 	"output": "Output",
 	"update": "Kemas kini",
 	"tools-view": "Paparkan",
-	"tools-delete": "Hapuskan",
+	"tools-delete": "Padam",
 	"tools-links": "Pautan ke laman ini",
 	"tools-subject": "Laman subjek",
 	"tools-hist": "Lihat sejarah",
