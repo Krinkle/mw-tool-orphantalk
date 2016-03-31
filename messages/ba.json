@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Haqmar",
-			"Sagan"
+			"Sagan",
+			"Азат Хәлилов"
 		]
 	},
 	"title": "OrphanTalk2",
@@ -17,7 +18,7 @@
 	"tools-links": "һылтанмалар",
 	"tools-subject": "тема",
 	"tools-hist": "тарих",
-	"tools-curr": "ағым.",
+	"tools-curr": "Һуңғы үҙгәртеүҙәр",
 	"tools-globalusage": "дөйөм ҡулланыу",
 	"deletesummary": "Йәтим-биттәрҙең фекер алышыу битен  $1 аша таҙартырға",
 	"noresults": "Был викила һеҙ һораған исемдәр арауығында йәтим-биттәрҙең фекер алышыу биттәре табылманы.",
