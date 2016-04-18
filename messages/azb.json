@@ -2,24 +2,29 @@
 	"@metadata": {
 		"authors": [
 			"Mousa",
-			"Koroğlu"
+			"Koroğlu",
+			"Alp Er Tunqa"
 		]
 	},
-	"title": "یئتیم‌دانیشیق۲",
+	"title": "یئتیم‌دانیشیق",
+	"description": "یئتیم دانیشیق صفحه‌لرینی تاپ.",
+	"label-wiki": "ویکی",
 	"select-wiki-first": "(ایلکجه بیر ویکی سئچین)",
 	"hideredirects": "یول‌لاندیرمالاری گیزلت",
 	"hidesubpages": "آلت‌صحیفه‌لری گیزلت",
 	"limit": "سینیر",
 	"page": "صفحه",
+	"tooltip-redirect": "بۇ صفحه بیر یوْللاندیرمادیر",
 	"output": "چیختی",
 	"update": "گونجل‌له",
+	"tools-view": "باخ",
 	"tools-delete": "سیل",
-	"tools-links": "باغلانتیلار",
-	"tools-subject": "قونو",
-	"tools-hist": "گئچمیش",
-	"tools-curr": "ایندی",
-	"tools-globalusage": "سراسری ایستیفاده",
-	"deletesummary": "$1 ایله یئتیم اولموش دانیشیق صحیفه‌لری سیلینیر",
+	"tools-links": "بۇ صفحه‌‌يه باغلانتیلار",
+	"tools-subject": "صفحه باشلیغی",
+	"tools-hist": "گئچمیشه باخ",
+	"tools-curr": "سوْن دَییشیکلیکلر",
+	"tools-globalusage": "فايل ایشلدمه‌سی",
+	"deletesummary": "$1: یتیم دانیشیق صفحه‌لری",
 	"noresults": "سیزین تنظیملرینیزله بو ویکی‌ده بو آدفضاسیندا بیر یئتیم اولموش دانیشیق صحیفه‌سی تاپیلمادی.",
 	"resultslimited": "نتیجه‌لر $1 صحیفه‌یه محدودلاشیبلار."
 }
