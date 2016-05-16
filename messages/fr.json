@@ -3,7 +3,8 @@
 		"authors": [
 			"Crochet.david",
 			"Gomoko",
-			"Jean-Frédéric"
+			"Jean-Frédéric",
+			"Wladek92"
 		]
 	},
 	"title": "OrphanTalk",
@@ -25,6 +26,6 @@
 	"tools-curr": "Dernière modification",
 	"tools-globalusage": "Utilisation du fichier",
 	"deletesummary": "$1 : Page de discussion orpheline",
-	"noresults": "Aucune page de discussion orpheline dans ce wiki dans cet espace de nommage correspondant à votre configuration.",
+	"noresults": "Aucune page de discussion orpheline dans ce wiki dans cet espace de noms correspondant à votre configuration.",
 	"resultslimited": "Les résultats ont été limités à $1 pages."
 }
