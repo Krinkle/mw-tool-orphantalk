@@ -3,7 +3,8 @@
 		"authors": [
 			"Tyey",
 			"아라",
-			"Hwangjy9"
+			"Hwangjy9",
+			"Ykhwong"
 		]
 	},
 	"title": "OrphanTalk2",
@@ -12,11 +13,12 @@
 	"hidesubpages": "하위 문서 숨기기",
 	"limit": "제한",
 	"page": "문서",
+	"tooltip-redirect": "이 문서는 넘겨주기입니다",
 	"output": "출력",
 	"update": "업데이트",
 	"tools-view": "보기",
 	"tools-delete": "삭제",
-	"tools-links": "링크",
+	"tools-links": "여기를 가리키는 문서",
 	"tools-subject": "주제 문서",
 	"tools-hist": "역사 보기",
 	"tools-curr": "차이",
