@@ -8,6 +8,7 @@
 		]
 	},
 	"title": "OrphanTalk2",
+	"label-wiki": "위키",
 	"select-wiki-first": "(먼저 위키 선택)",
 	"hideredirects": "넘겨주기 숨기기",
 	"hidesubpages": "하위 문서 숨기기",
