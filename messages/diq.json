@@ -2,21 +2,26 @@
 	"@metadata": {
 		"authors": [
 			"Erdemaslancan",
-			"Mirzali"
+			"Mirzali",
+			"Kumkumuk"
 		]
 	},
-	"title": "BakusWerenayış2",
+	"title": "BakusWerenayış",
+	"label-wiki": "Wiki",
 	"select-wiki-first": "(Ya sıfte yew wiki weçine)",
 	"hideredirects": "Hetenayışan bınımnê",
 	"hidesubpages": "Pelanê bınan bınımnê",
 	"limit": "Limit",
 	"page": "Pele",
+	"tooltip-redirect": "Enanyu pela hetenayışi ya",
 	"output": "Vıcyayış",
 	"update": "Rocane ke",
-	"tools-delete": "bestere",
-	"tools-links": "gırey",
-	"tools-subject": "mewzu",
-	"tools-hist": "ravyardê",
-	"tools-curr": "newen",
-	"tools-globalusage": "global karkerdış"
+	"tools-view": "Bıvin",
+	"tools-delete": "Bestere",
+	"tools-links": "Pele rê gıreyi",
+	"tools-subject": "Pela obji",
+	"tools-hist": "Verori bıvêne",
+	"tools-curr": "vurnayışo peyên",
+	"tools-globalusage": "Gurenayışê dosya",
+	"deletesummary": "$1: Pela werênayışiya bêkesan"
 }

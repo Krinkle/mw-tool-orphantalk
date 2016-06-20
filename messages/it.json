@@ -3,10 +3,11 @@
 		"authors": [
 			"Beta16",
 			"Gianfranco",
-			"Valepert"
+			"Valepert",
+			"Einreiher"
 		]
 	},
-	"title": "OrphanTalk",
+	"title": "Discussioni orfane",
 	"description": "Trova pagine di discussione orfane.",
 	"label-wiki": "Wiki",
 	"select-wiki-first": "(prima scegli un wiki)",
@@ -25,6 +26,6 @@
 	"tools-curr": "Ultima modifica",
 	"tools-globalusage": "Utilizzo del file",
 	"deletesummary": "$1: pagina di discussione orfana",
-	"noresults": "Nessuna corrispondenza di pagine orfane in questo wiki, e per questo namespace, con i criteri indicati.",
-	"resultslimited": "I risultati sono stati limitati a $1 pagine."
+	"noresults": "Non ci sono conversazioni orfane in questo wiki, per questo insieme di nomi, con i criteri indicati.",
+	"resultslimited": "Risultati limitati a $1 pagine."
 }
