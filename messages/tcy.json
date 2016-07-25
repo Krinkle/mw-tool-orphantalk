@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"VASANTH S.N."
+			"VASANTH S.N.",
+			"Vishwanatha Badikana"
 		]
 	},
 	"label-wiki": "ವಿಕಿಲು",
 	"limit": "ಮಿತಿ",
 	"page": "ಪುಟೊ",
-	"update": "ಪರಿಷ್ಕರಣೆ ಮಲ್ಪುಲೆ",
+	"update": "ಪರಿಸ್ಕರಣೆ ಮಲ್ಪುಲೆ",
 	"tools-view": "ತೂಲೆ",
 	"tools-delete": "ಮಾಜಾಲೆ",
 	"tools-links": "ಇಡೆ ವಾ ಪುಟೊ ಕೊಂಡಿ ಕೊರ್ಪುಂಡು",
