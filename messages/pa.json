@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tow"
+		]
+	},
+	"label-wiki": "ਵਿਕੀ",
+	"select-wiki-first": "(ਪਹਿਲਾੰ ਇੱਕ ਵਿਕੀ ਚੁਣੋ)",
+	"hideredirects": "ਮੋੜ ਲੁਕਾਓ",
+	"limit": "ਹੱਦ",
+	"page": "ਸਫ਼ਾ",
+	"output": "ਆਊਟਪੁਟ",
+	"update": "ਨਵਿਆਉ",
+	"tools-view": "ਵੇਖੋ",
+	"tools-delete": "ਮਿਟਾਓ",
+	"tools-links": "ਇੱਥੇ ਕੀ ਆ ਕੇ ਜੁੜਦਾ ਹੈ",
+	"tools-hist": "ਅਤੀਤ ਵੇਖੋ",
+	"tools-curr": "ਆਖ਼ਰੀ ਤਬਦੀਲੀ",
+	"tools-globalusage": "ਫ਼ਾਈਲ ਦੀ ਵਰਤੋਂ"
+}
