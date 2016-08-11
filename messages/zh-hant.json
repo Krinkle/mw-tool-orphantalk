@@ -6,7 +6,8 @@
 			"Shirayuki",
 			"Simon Shek",
 			"Wehwei",
-			"Cwlin0416"
+			"Cwlin0416",
+			"Kly"
 		]
 	},
 	"title": "孤立對話頁",
@@ -16,6 +17,7 @@
 	"hidesubpages": "隱藏子頁面",
 	"limit": "限制",
 	"page": "頁面",
+	"tooltip-redirect": "此頁面是重定向",
 	"output": "輸出",
 	"update": "更新",
 	"tools-delete": "刪除",

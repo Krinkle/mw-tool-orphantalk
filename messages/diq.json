@@ -7,6 +7,7 @@
 		]
 	},
 	"title": "BakusWerenayış",
+	"description": "Bêkes pera verênayışi bıvin",
 	"label-wiki": "Wiki",
 	"select-wiki-first": "(Ya sıfte yew wiki weçine)",
 	"hideredirects": "Hetenayışan bınımnê",
@@ -23,5 +24,7 @@
 	"tools-hist": "Verori bıvêne",
 	"tools-curr": "vurnayışo peyên",
 	"tools-globalusage": "Gurenayışê dosya",
-	"deletesummary": "$1: Pela werênayışiya bêkesan"
+	"deletesummary": "$1: Pela werênayışiya bêkesan",
+	"noresults": "Ena wiki de canameyè perer besteriya yo,  peranê verênayışana zi zey pê niyo.",
+	"resultslimited": "Limita neticeyan $1 peran ra tepêşyaya."
 }
