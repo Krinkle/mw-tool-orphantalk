@@ -11,6 +11,7 @@
 		]
 	},
 	"title": "孤立對話頁",
+	"description": "找尋孤立討論頁面",
 	"label-wiki": "Wiki",
 	"select-wiki-first": "（先選擇一個wiki）",
 	"hideredirects": "隱藏重新導向頁面",
