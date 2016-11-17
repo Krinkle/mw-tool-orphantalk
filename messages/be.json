@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Artificial123",
-			"LexArt"
+			"LexArt",
+			"Mechanizatar"
 		]
 	},
-	"title": "OrphanTalk2",
+	"title": "OrphanTalk",
 	"label-wiki": "Вікі",
 	"select-wiki-first": "(спачатку выберыце вікі)",
 	"hideredirects": "Схаваць перанакіраванні",
@@ -17,7 +18,7 @@
 	"update": "Абнавіць",
 	"tools-view": "Прагляд",
 	"tools-delete": "Выдаліць",
-	"tools-links": "спасылкі",
+	"tools-links": "Сюды спасылаюцца",
 	"tools-subject": "Старонка праекту",
 	"tools-hist": "Паказаць гісторыю",
 	"tools-curr": "Апошняя змена",
