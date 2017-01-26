@@ -3,10 +3,11 @@
 		"authors": [
 			"EugeneZelenko",
 			"Jim-by",
-			"Wizardist"
+			"Wizardist",
+			"Renessaince"
 		]
 	},
-	"title": "OrphanTalk2",
+	"title": "OrphanTalk",
 	"select-wiki-first": "(сьпярша выберыце вікі)",
 	"hideredirects": "Схаваць перанакіраваньні",
 	"hidesubpages": "Схаваць падстаронкі",
@@ -14,13 +15,13 @@
 	"page": "Старонка",
 	"output": "Вывад",
 	"update": "Абнавіць",
-	"tools-delete": "выдаліць",
-	"tools-links": "спасылкі",
-	"tools-subject": "прадмет",
-	"tools-hist": "гіст",
-	"tools-curr": "цяп",
-	"tools-globalusage": "глябальнае выкарыстаньне",
-	"deletesummary": "Выдаленьне абмеркаваньняў-сірацін праз $1",
+	"tools-delete": "Выдаліць",
+	"tools-links": "Спасылкі на старонку",
+	"tools-subject": "Старонка прадмету",
+	"tools-hist": "Паказаць гісторыю",
+	"tools-curr": "Апошняя зьмена",
+	"tools-globalusage": "Выкарыстаньне файла",
+	"deletesummary": "$1: асірацелая старонка-абмеркаваньне",
 	"noresults": "У гэтай вікі і ў гэтай прасторы назваў абмеркаваньняў-сірацін няма.",
 	"resultslimited": "Вынік абмежаваны да $1 старонак."
 }
