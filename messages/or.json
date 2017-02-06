@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jnanaranjan Sahu"
+			"Jnanaranjan Sahu",
+			"Susant purohit"
 		]
 	},
 	"title": "OrphanTalk2",
+	"label-wiki": "ଉଇକି",
 	"select-wiki-first": "(ଆଗ ଏକ ଉଇକି ବାଛନ୍ତୁ)",
 	"hideredirects": "ପୁନଃପ୍ରେରଣସମୂହକୁ ଲୁଚାଇବେ",
 	"hidesubpages": "ଉପପୃଷ୍ଠାଗୁଡିକୁ ଲୁଚାଇବେ",
@@ -12,11 +14,12 @@
 	"page": "ପୃଷ୍ଠା",
 	"output": "ଫଳାଫଳ",
 	"update": "ଅପଡେଟ କରିବେ",
-	"tools-delete": "ଲିଭାଇବେ",
-	"tools-links": "ଲିଙ୍କଗୁଡିକ",
-	"tools-subject": "ବିଷୟ",
-	"tools-hist": "ଶେଷ",
-	"tools-curr": "ବର୍ତମାନ",
-	"tools-globalusage": "ସମସ୍ତ ବ୍ୟବହାର",
+	"tools-view": "ଦେଖଣା",
+	"tools-delete": "ଲିଭାନ୍ତୁ",
+	"tools-links": "ଏଠାରେ ଥିବା ଲିଙ୍କ",
+	"tools-subject": "ବିଷୟ ପୃଷ୍ଠା",
+	"tools-hist": "ଇତିହାସ ଦେଖନ୍ତୁ",
+	"tools-curr": "ଶେଷ ବଦଳ",
+	"tools-globalusage": "ଫାଇଲ ବ୍ୟବହାର",
 	"resultslimited": "ଫଳାଫଳ ଗୁଡିକ $1ପୃଷ୍ଠା ଭିତରେ ସୀମାତୀତ ହେଲା ।"
 }
