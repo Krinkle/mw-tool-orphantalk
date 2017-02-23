@@ -4,17 +4,20 @@
 			"Veeven"
 		]
 	},
+	"label-wiki": "వికీ",
 	"select-wiki-first": "(ముందుగా ఒక వికీని ఎంచుకోండి)",
 	"hideredirects": "దారిమార్పులను దాచు",
 	"hidesubpages": "ఉపపుటలను దాచు",
 	"limit": "పరిమితి",
 	"page": "పుట",
+	"tooltip-redirect": "ఈ పేజీ ఒక దారిమార్పు",
 	"update": "తాజాకరించు",
-	"tools-delete": "తొలగించండి",
+	"tools-view": "చూడండి",
+	"tools-delete": "తొలగించు",
 	"tools-links": "లంకెలు",
 	"tools-subject": "విషయం",
-	"tools-hist": "చరిత్ర",
-	"tools-curr": "ప్రస్తుత",
-	"tools-globalusage": "సార్వత్రికవాడుక",
+	"tools-hist": "చరిత్రను చూడండి",
+	"tools-curr": "చివరి మార్పు",
+	"tools-globalusage": "దస్త్రపు వాడుక",
 	"resultslimited": "ఫలితాలు $1 పుటలకు పరిమితం చేయబడ్డాయి."
 }
