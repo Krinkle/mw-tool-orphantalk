@@ -23,7 +23,7 @@ $I18N->registerDomain( 'orphantalk2', __DIR__ . '/../messages' );
 $kgBase = BaseTool::newFromArray( array(
 	'displayTitle' => $I18N->msg( 'title' ),
 	'remoteBasePath' => dirname( $kgConf->getRemoteBase() ). '/',
-	'revisionId' => '0.3.0',
+	'revisionId' => '0.4.0',
 	'I18N' => $I18N,
 	'styles' => array(
 		'resources/chosen/chosen.css',
