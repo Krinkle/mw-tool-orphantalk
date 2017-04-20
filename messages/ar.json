@@ -3,7 +3,8 @@
 		"authors": [
 			"Meno25",
 			"OsamaK",
-			"أحمد"
+			"أحمد",
+			"زكريا"
 		]
 	},
 	"title": "نقاش يتيم",
@@ -21,7 +22,7 @@
 	"tools-delete": "حذف",
 	"tools-links": "ماذا يصل هنا",
 	"tools-subject": "صفحة الموضوع",
-	"tools-hist": "عرض التاريخ",
+	"tools-hist": "التاريخ",
 	"tools-curr": "آخر تغيير",
 	"tools-globalusage": "استخدام الملف",
 	"deletesummary": "$1: صفحة نقاش يتيمة",
