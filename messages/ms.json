@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Anakmalaysia",
-			"Yusozim"
+			"Yusozim",
+			"Jeluang Terluang"
 		]
 	},
 	"title": "OrphanTalk",
@@ -13,7 +14,7 @@
 	"hidesubpages": "Sorokkan sublaman",
 	"limit": "Had",
 	"page": "Halaman",
-	"tooltip-redirect": "Laman ini adalah lencongan",
+	"tooltip-redirect": "Laman ini ialah lencongan",
 	"output": "Output",
 	"update": "Kemas kini",
 	"tools-view": "Paparkan",
