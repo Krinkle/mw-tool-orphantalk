@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sahran"
+			"Sahran",
+			"Uzdil"
 		]
 	},
 	"title": "يالغۇز سۆزلىشىش بېتى2",
 	"select-wiki-first": "(ئالدى بىلەن بىر ۋىكى تاللاڭ)",
-	"hideredirects": "قايتا نىشانلاشنى يوشۇر",
-	"hidesubpages": "تارماق بەتلەرنى يوشۇر",
+	"hideredirects": "قايتا نىشانلاشنى يوشۇرۇش",
+	"hidesubpages": "تارماق بەتنى يوشۇرۇش",
 	"limit": "چەك",
 	"page": "بەت",
 	"output": "چىقار",
