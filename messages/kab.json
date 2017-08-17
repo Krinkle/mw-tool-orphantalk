@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Belkacem77"
+		]
+	},
+	"title": "OrphanTalk",
+	"label-wiki": "Awiki",
+	"select-wiki-first": "(fren di tazwara awiki)",
+	"limit": "Talast",
+	"page": "Asebter",
+	"output": "Tuffɣa",
+	"update": "Leqqem",
+	"tools-view": "Sken",
+	"tools-delete": "Kkes",
+	"tools-links": "Iseɣwan ar dagi",
+	"tools-subject": "Asebter n usentel",
+	"tools-hist": "Sken amazray",
+	"tools-curr": "Asnifel aneggaru",
+	"tools-globalusage": "Aseqdec n ufaylu"
+}
