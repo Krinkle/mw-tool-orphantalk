@@ -11,7 +11,7 @@
 	"title": "OrphanTalk",
 	"description": "Encuentra páginas de discusión huérfanas.",
 	"label-wiki": "Wiki",
-	"select-wiki-first": "(selecciona primero una wiki)",
+	"select-wiki-first": "(selecciona primero un wiki)",
 	"hideredirects": "Ocultar redirecciones",
 	"hidesubpages": "Ocultar subpáginas",
 	"limit": "Límite",
