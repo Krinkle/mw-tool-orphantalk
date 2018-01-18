@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Milicevic01",
-			"Rancher"
+			"Rancher",
+			"Acamicamacaraca"
 		]
 	},
 	"title": "OrphanTalk",
-	"description": "Проналази странице за разговор које су сирочад.",
+	"description": "Пронађи странице за разговор које су сирочад.",
 	"label-wiki": "Вики",
 	"select-wiki-first": "(прво изаберите вики)",
 	"hideredirects": "Сакриј преусмерења",
