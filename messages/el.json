@@ -3,9 +3,11 @@
 		"authors": [
 			"Evropi",
 			"Geraki",
-			"Glavkos"
+			"Glavkos",
+			"Nikosgranturismogt"
 		]
 	},
+	"title": "OrphanTalk",
 	"description": "Βρείτε ορφανές σελίδες συζήτησης.",
 	"label-wiki": "Wiki",
 	"select-wiki-first": "(επιλέξτε πρώτα ένα wiki)",
@@ -24,5 +26,6 @@
 	"tools-curr": "Τελευταία αλλαγή",
 	"tools-globalusage": "Χρήση αρχείου",
 	"deletesummary": "$1: Ορφανή σελίδα συζήτησης",
+	"noresults": "Δεν υπάρχουν ορφανές σελίδες συζήτησης εντός του βίκι σε αυτό το ονοματοχώρο που αντιστοιχούν στις ρυθμίσεις σας.",
 	"resultslimited": "Τα αποτελέσματα περιορίστηκαν σε $1 σελίδες."
 }
