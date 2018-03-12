@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"عثمان خان شاہ"
+			"عثمان خان شاہ",
+			"BukhariSaeed"
 		]
 	},
 	"label-wiki": "ویکی",
@@ -9,7 +10,7 @@
 	"hideredirects": "رجوع مکررات چھپائے",
 	"limit": "حد",
 	"page": "صفحہ",
-	"tooltip-redirect": "یہ صفہ ایک رجوع مکرر ہے",
+	"tooltip-redirect": "یہ صفحہ ایک رجوع مکرر ہے",
 	"update": "پڑتال",
 	"tools-view": "دکھائے",
 	"tools-delete": "حذف",
