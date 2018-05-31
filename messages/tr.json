@@ -5,10 +5,12 @@
 			"Trockya",
 			"Vito Genovese",
 			"Uğurkent",
-			"Alpkant"
+			"Alpkant",
+			"Hedda"
 		]
 	},
 	"title": "YetimTartışma2",
+	"description": "Öksüz tartışma sayfalarını bul.",
 	"label-wiki": "Viki",
 	"select-wiki-first": "(ilk olarak bir viki seçin)",
 	"hideredirects": "Yönlendirmeleri gizle",
@@ -25,7 +27,7 @@
 	"tools-hist": "Geçmişi gör",
 	"tools-curr": "Son değişiklik",
 	"tools-globalusage": "Dosya Kullanımı",
-	"deletesummary": "$1 aracılığıyla sayfası silinmiş tartışma sayfaları temizleniyor",
+	"deletesummary": "$1: Öksüz tartışma sayfası",
 	"noresults": "Bu vikinin bu ad alanındaki sayfası silinmiş hiçbir tartışma sayfası ayarlarınız ile eşleşmedi.",
 	"resultslimited": "Sonuçlar, $1 sayfa ile sınırlandırıldı."
 }
