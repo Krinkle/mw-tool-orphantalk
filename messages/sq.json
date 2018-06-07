@@ -1,9 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"FatosMorina"
+			"FatosMorina",
+			"Liridonshala"
 		]
 	},
+	"label-wiki": "wiki",
+	"select-wiki-first": "(zgjedh wiki fillimisht)",
 	"hideredirects": "Fshih përcjelljet",
-	"hidesubpages": "Fshih nënfaqet"
+	"hidesubpages": "Fshih nënfaqet",
+	"limit": "Kufi",
+	"page": "Faqja",
+	"tooltip-redirect": "Kjo faqe eshte e ridrejtuar",
+	"output": "Dalja",
+	"update": "Përditëso",
+	"tools-view": "Shiko",
+	"tools-delete": "Fshi",
+	"tools-subject": "Faqja e subjektit",
+	"tools-hist": "Shiko historikun",
+	"tools-curr": "ndryshimi i fundit",
+	"tools-globalusage": "Përdorimi i skedës"
 }
