@@ -4,7 +4,8 @@
 			"Crochet.david",
 			"Gomoko",
 			"Jean-Frédéric",
-			"Wladek92"
+			"Wladek92",
+			"Od1n"
 		]
 	},
 	"title": "OrphanTalk",
@@ -22,7 +23,7 @@
 	"tools-delete": "Supprimer",
 	"tools-links": "Liens vers ici",
 	"tools-subject": "Page de sujet",
-	"tools-hist": "Afficher l’historique",
+	"tools-hist": "Voir l’historique",
 	"tools-curr": "Dernière modification",
 	"tools-globalusage": "Utilisation du fichier",
 	"deletesummary": "$1 : Page de discussion orpheline",
