@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"DCLXVI",
-			"Vodnokon4e"
+			"Vodnokon4e",
+			"StanProg"
 		]
 	},
+	"hideredirects": "Скриване на пренасочванията",
+	"hidesubpages": "Скриване на подстраниците",
 	"update": "Обновяване",
 	"tools-delete": "Изтриване",
 	"tools-hist": "Показване на историята",
