@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"An13sa",
-			"Subi"
+			"Subi",
+			"Amaia"
 		]
 	},
 	"title": "OrphanTalk",
+	"description": "Eztabaida orri umezurtzak aurkitu.",
 	"label-wiki": "Wiki",
 	"select-wiki-first": "(hauta ezazu wiki bat lehenik)",
 	"hideredirects": "Birzuzenketak ezkutatu",
@@ -21,5 +23,6 @@
 	"tools-subject": "Gaiaren orria",
 	"tools-hist": "Ikusi historia",
 	"tools-curr": "Azken aldaketa",
-	"tools-globalusage": "Fitxategiaren erabilera"
+	"tools-globalusage": "Fitxategiaren erabilera",
+	"deletesummary": "$1: eztabaida orri umezurtza"
 }
