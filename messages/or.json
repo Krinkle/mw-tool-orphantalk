@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Jnanaranjan Sahu",
-			"Susant purohit"
+			"Susant purohit",
+			"Psubhashish"
 		]
 	},
 	"title": "OrphanTalk2",
 	"label-wiki": "ଉଇକି",
 	"select-wiki-first": "(ଆଗ ଏକ ଉଇକି ବାଛନ୍ତୁ)",
-	"hideredirects": "ପୁନଃପ୍ରେରଣସମୂହକୁ ଲୁଚାଇବେ",
+	"hideredirects": "ଲେଉଟାଣିସବୁକୁ ଲୁଚାଇବେ",
 	"hidesubpages": "ଉପପୃଷ୍ଠାଗୁଡିକୁ ଲୁଚାଇବେ",
 	"limit": "ସୀମା",
 	"page": "ପୃଷ୍ଠା",
