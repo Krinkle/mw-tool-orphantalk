@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black"
+		]
+	},
+	"label-wiki": "ဝီကီ",
+	"select-wiki-first": "(ဝီကီတစ်ခု အရင်ဆုံးရွေးပါ)",
+	"hideredirects": "ပြန်ညွှန်းများအား ဝှက်ရန်",
+	"hidesubpages": "စာမျက်နှာခွဲများအား ဝှက်ရန်",
+	"limit": "ကန့်သတ်ချက်",
+	"page": "စာမျက်နှာ",
+	"tooltip-redirect": "ဤစာမျက်နှာသည် ပြန်ညွှန်းတစ်ခုဖြစ်သည်",
+	"update": "မွမ်းမံ",
+	"tools-view": "ကြည့်ရန်",
+	"tools-delete": "ဖျက်ရန်",
+	"tools-links": "ဘယ်ကလင့်ခ်ထားလဲ",
+	"tools-hist": "ရာဇဝင်ကြည့်ရန်",
+	"tools-curr": "နောက်ဆုံး ပြောင်းလဲမှု",
+	"tools-globalusage": "ဖိုင်သုံးစွဲမှု",
+	"resultslimited": "ရလဒ်များကို $1 စာမျက်နှာသို့ ကန့်သတ်ထားသည်။"
+}
