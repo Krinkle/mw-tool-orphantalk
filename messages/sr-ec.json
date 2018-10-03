@@ -3,11 +3,12 @@
 		"authors": [
 			"Milicevic01",
 			"Rancher",
-			"Acamicamacaraca"
+			"Acamicamacaraca",
+			"BadDog"
 		]
 	},
 	"title": "OrphanTalk",
-	"description": "Пронађи странице за разговор које су сирочад.",
+	"description": "Проналажење страница за разговор које су сирочад.",
 	"label-wiki": "Вики",
 	"select-wiki-first": "(прво изаберите вики)",
 	"hideredirects": "Сакриј преусмерења",
@@ -17,14 +18,14 @@
 	"tooltip-redirect": "Ова страница је преусмерење",
 	"output": "Излаз",
 	"update": "Ажурирај",
-	"tools-view": "Погледај",
-	"tools-delete": "Обриши",
+	"tools-view": "Прикажи",
+	"tools-delete": "Избриши",
 	"tools-links": "Шта води овде",
-	"tools-subject": "Предметна страница",
+	"tools-subject": "Страница предмета",
 	"tools-hist": "Историја",
-	"tools-curr": "Последња измена",
-	"tools-globalusage": "Употреба датотеке",
-	"deletesummary": "$1: страница за разговор - сироче",
+	"tools-curr": "Последња промена",
+	"tools-globalusage": "Коришћење датотеке",
+	"deletesummary": "$1: страница за разговор — сироче",
 	"noresults": "На овом викију нема неповезаних страница за разговор у овом именском простору које одговарају вашим поставкама.",
 	"resultslimited": "Резултати су ограничени на $1 страница."
 }
