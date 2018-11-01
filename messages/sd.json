@@ -1,14 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mehtab ahmed"
+			"Mehtab ahmed",
+			"Tweety"
 		]
 	},
+	"title": "يتيم بحث",
+	"description": "يتيم بحث صفحا ڳوليو.",
 	"label-wiki": "وڪي",
 	"select-wiki-first": "(پهريان ڪا وڪي چونڊيو)",
 	"hideredirects": "چورڻا لڪايو",
+	"hidesubpages": "ذيلي صفحا لڪايو",
 	"limit": "حد",
 	"page": "صفحو",
+	"update": "تازو ڪيو",
 	"tools-view": "ڏسو",
 	"tools-delete": "ختم ڪريو",
 	"tools-links": "هتان ڇا ڳنڍيل آهي",
