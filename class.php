@@ -1,8 +1,8 @@
 <?php
 /**
- * Main class
+ * Main class for the OrphanTalk tool.
  *
- * @package mw-tool-orphantalk
+ * @copyright 2011-2018 Timo Tijhof
  */
 class OrphanTalk extends KrToolBaseClass {
 
