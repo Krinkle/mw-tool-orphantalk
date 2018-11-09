@@ -240,6 +240,17 @@ class OrphanTalk extends KrToolBaseClass {
 				) ),
 				'label' => $I18N->msg( 'tools-view' ),
 			),
+			'hist' => array(
+				'url' => $wiki->getUrl( array(
+					'curid' => $pageRow['page_id'],
+					'action' => 'history',
+				) ),
+				'label' => $I18N->msg( 'tools-hist' ),
+			),
+			'subject' => array(
+				'url' => $wiki->getPageUrl( $namespaces[ $pageRow['page_namespace'] - 1 ] . ':' . $pageRow['page_title'] ),
+				'label' => $I18N->msg( 'tools-subject' ),
+			),
 			'delete' => array(
 				'url' => $wiki->getUrl( array(
 					'curid' => $pageRow['page_id'],
@@ -255,17 +266,6 @@ class OrphanTalk extends KrToolBaseClass {
 					'target' => $namespaces[ $pageRow['page_namespace'] ] . ':' . $pageRow['page_title'],
 				) ),
 				'label' => $I18N->msg( 'tools-links' ),
-			),
-			'subject' => array(
-				'url' => $wiki->getPageUrl( $namespaces[ $pageRow['page_namespace'] - 1 ] . ':' . $pageRow['page_title'] ),
-				'label' => $I18N->msg( 'tools-subject' ),
-			),
-			'hist' => array(
-				'url' => $wiki->getUrl( array(
-					'curid' => $pageRow['page_id'],
-					'action' => 'history',
-				) ),
-				'label' => $I18N->msg( 'tools-hist' ),
 			),
 			'curr' => array(
 				'url' => $wiki->getUrl( array(
