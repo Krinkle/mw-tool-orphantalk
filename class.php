@@ -108,30 +108,30 @@ class OrphanTalk extends KrToolBaseClass {
 			. '<div class="form-group">'
 				. '<div class="col-sm-offset-2 col-sm-5">'
 					. '<div class="checkbox">'
-					. Html::openElement( 'label' )
-					. Html::element( 'input', array(
-						'type' => 'checkbox',
-						'name' => 'hideredirects',
-						'checked' => $this->params['hideredirects'],
-						'id' => 'ot-form-hideredirects',
-					) )
-					. ' ' . htmlspecialchars( $I18N->msg( 'hideredirects' ) )
-					. Html::closeElement( 'label' )
+					. Html::rawElement( 'label', [],
+						Html::element( 'input', array(
+							'type' => 'checkbox',
+							'name' => 'hideredirects',
+							'checked' => $this->params['hideredirects'],
+							'id' => 'ot-form-hideredirects',
+						) )
+						. ' ' . htmlspecialchars( $I18N->msg( 'hideredirects' ) )
+					)
 					. '</div>'
 				. '</div>'
 			. '</div>'
 			. '<div class="form-group">'
 				. '<div class="col-sm-offset-2 col-sm-5">'
 					. '<div class="checkbox">'
-					. Html::openElement( 'label' )
-					. Html::element( 'input', array(
-						'type' => 'checkbox',
-						'name' => 'hidesubpages',
-						'checked' => $this->params['hidesubpages'],
-						'id' => 'ot-form-hidesubpages',
-					) )
-					. ' ' . htmlspecialchars( $I18N->msg( 'hidesubpages' ) )
-					. Html::closeElement( 'label' )
+					. Html::rawElement( 'label', [],
+						Html::element( 'input', array(
+							'type' => 'checkbox',
+							'name' => 'hidesubpages',
+							'checked' => $this->params['hidesubpages'],
+							'id' => 'ot-form-hidesubpages',
+						) )
+						. ' ' . htmlspecialchars( $I18N->msg( 'hidesubpages' ) )
+					)
 					. '</div>'
 				. '</div>'
 			. '</div>'
@@ -184,47 +184,53 @@ class OrphanTalk extends KrToolBaseClass {
 
 		$wiki = Wiki::byDbname( $this->params['wiki'] );
 
-		$html = Html::openElement( 'table', array( 'class' => 'table table-bordered table-hover table-xs-stack ot-table' ) )
-			. '<colgroup>'
-			. '<col class="col-sm-1"></col><col class="col-sm-4"></col><col class="col-sm-7"></col>'
-			. '</colgroup>'
-			. '<thead><tr>'
-			. Html::element( 'th', array(), '#' )
-			. Html::element( 'th', array( 'colspan' => '2' ), $I18N->msg( 'page' ) )
-			. '</tr></thead><tbody>';
+		$tableHtml = '';
 
 		foreach ( $rows as $i => &$row ) {
 			$links = $this->getPageActionLinks( $wiki, $row );
-			$html .= '<tr>'
-				. Html::element( 'td', array(), $i +1 )
-				. Html::openElement( 'td', array(
-					'class' => array(
-						'ot-cell-trim',
-						'ot-page',
-						'ot-page-redirect' => !!$row['page_is_redirect'],
-					),
-					'title' => $row['page_is_redirect'] ? $I18N->msg( 'tooltip-redirect' ) : null
-				) )
-				. Html::rawElement( 'a', array(
-					'href' => $links['view']['url'],
-					'target' => '_blank',
-				),
-					( $row['page_is_redirect']
-						? '<span class="glyphicon glyphicon-forward"></span> '
-						: '<span class="glyphicon glyphicon-file"></span> '
+			$tableHtml .= ''
+				. Html::rawElement( 'tr', [],
+					Html::element( 'td', array(), $i + 1 )
+					. Html::rawElement( 'td',
+						array(
+							'class' => array(
+								'ot-cell-trim',
+								'ot-page',
+								'ot-page-redirect' => !!$row['page_is_redirect'],
+							),
+							'title' => $row['page_is_redirect'] ? $I18N->msg( 'tooltip-redirect' ) : null
+						),
+						Html::rawElement( 'a',
+							array(
+								'href' => $links['view']['url'],
+								'target' => '_blank',
+							),
+							( $row['page_is_redirect']
+								? '<span class="glyphicon glyphicon-forward"></span> '
+								: '<span class="glyphicon glyphicon-file"></span> '
+							)
+							. ' '
+							. htmlspecialchars( str_replace( '_', ' ', $row['page_title'] ) )
+						)
 					)
-					. ' '
-					. htmlspecialchars( str_replace( '_', ' ', $row['page_title'] ) )
-				)
-				. '</td>'
-				. '<td>'
-				. join( ' &bull; ', array_map( function ( $link ) {
-					return Html::element( 'a', array( 'href' => $link['url'], 'target' => '_blank' ), $link['label'] );
-				}, $links ) )
-				. '</td>'
-				. '</tr>';
+					. Html::rawElement( 'td', [],
+						join( ' &bull; ', array_map( function ( $link ) {
+							return Html::element( 'a', array( 'href' => $link['url'], 'target' => '_blank' ), $link['label'] );
+						}, $links ) )
+					)
+				);
 		}
-		$html .= '</tbody></table>';
+		$html = Html::rawElement( 'table',
+			[ 'class' => 'table table-bordered table-hover table-xs-stack ot-table' ],
+			'<colgroup>'
+			. '<col class="col-sm-1"></col><col class="col-sm-4"></col><col class="col-sm-7"></col>'
+			. '</colgroup>'
+			. '<thead><tr>'
+			. Html::element( 'th', [], '#' )
+			. Html::element( 'th', [ 'colspan' => '2' ], $I18N->msg( 'page' ) )
+			. '</tr></thead>'
+			. Html::rawElement( 'tbody', [], $tableHtml )
+		);
 		$kgBase->addOut( $html );
 	}
 
