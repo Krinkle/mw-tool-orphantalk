@@ -24,7 +24,7 @@
 	"tools-hist": "Näytä historia",
 	"tools-curr": "Viimeisin muutos",
 	"tools-globalusage": "Tiedoston käyttö",
-	"deletesummary": "Yksinäisten keskustelusivujen siivous $1-työkalulla",
+	"deletesummary": "$1: Yksinäinen keskustelusivu",
 	"noresults": "Asetuksesi eivät vastanneet yhtään yksinäistä keskustelusivua tässä wikissä ja tässä nimiavaruudessa.",
 	"resultslimited": "Tulokset rajoitettiin $1 sivuun."
 }
