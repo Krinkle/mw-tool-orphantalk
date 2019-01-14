@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"عثمان خان شاہ",
-			"BukhariSaeed"
+			"BukhariSaeed",
+			"Muhammad Shuaib"
 		]
 	},
 	"label-wiki": "ویکی",
@@ -17,6 +18,6 @@
 	"tools-links": "ادھر کونسا ربط ہے",
 	"tools-subject": "صفحۂ صُغرٰی",
 	"tools-hist": "تاریخچہ دکھائیے",
-	"tools-curr": "آکری تبدیلی",
-	"tools-globalusage": "ملف کا استعمال"
+	"tools-curr": "آخری تبدیلی",
+	"tools-globalusage": "فائل کا استعمال"
 }
