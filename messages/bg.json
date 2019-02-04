@@ -3,11 +3,13 @@
 		"authors": [
 			"DCLXVI",
 			"Vodnokon4e",
-			"StanProg"
+			"StanProg",
+			"Vlad5250"
 		]
 	},
 	"hideredirects": "Скриване на пренасочванията",
 	"hidesubpages": "Скриване на подстраниците",
+	"tooltip-redirect": "Страницата е пренасочване",
 	"update": "Обновяване",
 	"tools-delete": "Изтриване",
 	"tools-hist": "Показване на историята",
