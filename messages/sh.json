@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"title": "Usamljeni razgovori",
+	"description": "Pronađite usamljene stranice.",
+	"label-wiki": "Wiki",
+	"select-wiki-first": "(prvo izaberite wiki)",
+	"hideredirects": "Sakrij preusmjerenja",
+	"hidesubpages": "Sakrij podstranice",
+	"limit": "Najveće do",
+	"page": "Stranica",
+	"tooltip-redirect": "Ova stranica je preusmjerenje",
+	"output": "Izlaz",
+	"update": "Ažuriraj",
+	"tools-view": "Vidi",
+	"tools-delete": "Izbriši",
+	"tools-links": "Šta vodi ovde",
+	"tools-subject": "Stranica predmeta",
+	"tools-hist": "Istorija",
+	"tools-curr": "Posljednja promjena",
+	"tools-globalusage": "Upotreba datoteke",
+	"deletesummary": "$1: Usamljena stranica za razgovor",
+	"noresults": "Na ovom wikiju nema usamljene stranice za razgovor u ovom imenskom prostoru koje odgovaraju vašim postavkama.",
+	"resultslimited": "Ishod je ograničen na $1 stranica"
+}
