@@ -3,7 +3,8 @@
 		"authors": [
 			"Anakmalaysia",
 			"Yekrats",
-			"KuboF"
+			"KuboF",
+			"Mirin"
 		]
 	},
 	"title": "OrphanTalk",
@@ -25,5 +26,6 @@
 	"tools-curr": "Lasta ŝanĝo",
 	"tools-globalusage": "Dosiera uzado",
 	"deletesummary": "$1: Orfa diskutpaĝo",
+	"noresults": "Neniu orfa diskutpaĝo en tiu vikio en tiu nomspaco troviĝis kun viaj agordoj.",
 	"resultslimited": "Rezultoj estis limigitaj al $1 paĝoj."
 }
