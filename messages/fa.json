@@ -3,7 +3,8 @@
 		"authors": [
 			"Ebraminio",
 			"Reza1615",
-			"Wayiran"
+			"Wayiran",
+			"FarsiNevis"
 		]
 	},
 	"title": "بحث‌یتیم",
@@ -16,7 +17,7 @@
 	"page": "صفحه",
 	"tooltip-redirect": "این صفحه تغییر مسیر است",
 	"output": "خروجی",
-	"update": "به روز رسانی",
+	"update": "روزامدسازی",
 	"tools-view": "نمایش",
 	"tools-delete": "حذف",
 	"tools-links": "پیوند به اینجا",
