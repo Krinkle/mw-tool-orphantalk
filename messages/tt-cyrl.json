@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ерней"
+		]
+	},
+	"label-wiki": "Вики",
+	"limit": "Чикләмә",
+	"page": "Бит",
+	"output": "Нәтиҗә",
+	"update": "Яңарту",
+	"tools-view": "Карау",
+	"tools-delete": "Бетерү",
+	"tools-links": "Бирегә нәрсә сылтый",
+	"tools-hist": "Тарихын карау",
+	"tools-curr": "Соңгы үзгәреш"
+}
