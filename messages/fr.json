@@ -5,7 +5,8 @@
 			"Gomoko",
 			"Jean-Frédéric",
 			"Wladek92",
-			"Od1n"
+			"Od1n",
+			"Verdy p"
 		]
 	},
 	"title": "OrphanTalk",
@@ -21,12 +22,12 @@
 	"update": "Mettre à jour",
 	"tools-view": "Afficher",
 	"tools-delete": "Supprimer",
-	"tools-links": "Liens vers ici",
+	"tools-links": "Ce qui pointe ici",
 	"tools-subject": "Page de sujet",
 	"tools-hist": "Voir l’historique",
 	"tools-curr": "Dernière modification",
 	"tools-globalusage": "Utilisation du fichier",
-	"deletesummary": "$1 : Page de discussion orpheline",
-	"noresults": "Aucune page de discussion orpheline dans ce wiki dans cet espace de noms correspondant à votre configuration.",
+	"deletesummary": "$1 : page de discussion orpheline",
+	"noresults": "Aucune page de discussion orpheline sur ce wiki ne correspond à vos paramètres dans cet espace de noms.",
 	"resultslimited": "Les résultats ont été limités à $1 pages."
 }
