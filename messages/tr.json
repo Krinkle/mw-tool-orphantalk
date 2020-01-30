@@ -6,10 +6,11 @@
 			"Vito Genovese",
 			"Uğurkent",
 			"Alpkant",
-			"Hedda"
+			"Hedda",
+			"BaRaN6161 TURK"
 		]
 	},
-	"title": "YetimTartışma2",
+	"title": "YetimTartışma",
 	"description": "Öksüz tartışma sayfalarını bul.",
 	"label-wiki": "Viki",
 	"select-wiki-first": "(ilk olarak bir viki seçin)",
@@ -22,7 +23,7 @@
 	"update": "Güncelle",
 	"tools-view": "Görüntüle",
 	"tools-delete": "Sil",
-	"tools-links": "Hangi linkler burada",
+	"tools-links": "Sayfaya bağlantılar",
 	"tools-subject": "Konu sayfası",
 	"tools-hist": "Geçmişi gör",
 	"tools-curr": "Son değişiklik",
