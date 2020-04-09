@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"title": "Foreldreløse diskusjonssider 2",
 	"select-wiki-first": "(velg en wiki først)",
 	"hideredirects": "Skjul omdirigeringer",
