@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"NoiX180"
 		]
 	},
 	"title": "OrphanTalk2",
 	"select-wiki-first": "(pilih wiki dhisik)",
 	"hideredirects": "Dhelikaké alihan",
-	"hidesubpages": "Dhelikna subkaca",
+	"hidesubpages": "Dhelikna anak kaca",
 	"limit": "Wates",
 	"page": "Kaca",
 	"output": "Weton",
