@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac"
+		]
+	},
+	"label-wiki": "Վիքի",
+	"hideredirects": "Թաքցնել վերահղումներ",
+	"limit": "Սահմանափակում",
+	"page": "Էջ",
+	"update": "Թարմացնել",
+	"tools-delete": "Ջնջել",
+	"tools-hist": "Դիտել պատմությունը",
+	"tools-curr": "Վերջին փոփոխությունը",
+	"tools-globalusage": "Նիշքի օգտագործում"
+}
