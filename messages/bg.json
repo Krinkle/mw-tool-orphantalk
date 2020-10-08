@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"DCLXVI",
+			"Kareyac",
 			"StanProg",
 			"Vlad5250",
 			"Vodnokon4e"
@@ -13,6 +14,7 @@
 	"tooltip-redirect": "Страницата е пренасочване",
 	"update": "Обновяване",
 	"tools-delete": "Изтриване",
+	"tools-links": "Какво сочи насам",
 	"tools-hist": "Показване на историята",
 	"tools-curr": "Последна промяна"
 }
