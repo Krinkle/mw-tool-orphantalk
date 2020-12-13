@@ -1,9 +1,6 @@
-sudo: false
-language: php
+anguage: php
 php:
   - "7.2"
-  - "7.1"
-  - "7.0"
 install:
   - composer install
 script:
