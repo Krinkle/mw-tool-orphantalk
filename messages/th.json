@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aefgh39622",
+			"Ans"
+		]
+	},
+	"title": "OrphanTalk",
+	"description": "ค้นหาหน้าคุยที่ถูกละเลย",
+	"label-wiki": "วิกิ",
+	"select-wiki-first": "(ต้องเลือกวิกิก่อน)",
+	"hideredirects": "ซ่อนหน้าเปลี่ยนทาง",
+	"hidesubpages": "ซ่อนหน้าย่อย",
+	"limit": "ขีดจำกัด",
+	"page": "หน้า",
+	"tooltip-redirect": "หน้านี้เป็นหน้าเปลี่ยนทาง",
+	"output": "ผลลัพธ์",
+	"update": "ปรับปรุง",
+	"tools-view": "ดู",
+	"tools-delete": "ลบ",
+	"tools-links": "หน้าที่ลิงก์มา",
+	"tools-subject": "หน้าหัวเรื่อง",
+	"tools-hist": "ดูประวัติ",
+	"tools-curr": "การเปลี่ยนแปลงล่าสุด",
+	"tools-globalusage": "การใช้ไฟล์",
+	"deletesummary": "$1: หน้าคุยที่ถูกละเลย",
+	"noresults": "ไม่มีหน้าคุยที่ถูกละเลยบนวิกินี้ในเนมสเปซนี้ที่ตรงกับการตั้งค่าของคุณ",
+	"resultslimited": "ผลลัพธ์ถูกจำกัดไว้ที่ $1 หน้า"
+}
