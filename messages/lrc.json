@@ -2,14 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Bonevarluri",
+			"Lorestani",
 			"Mogoeilor"
 		]
 	},
-	"select-wiki-first": "(اول یه گل ویکی انتخاو بکید)",
-	"limit": "كران دار بيئن",
-	"page": "بلگه",
-	"output": "نتیجه",
-	"update": "روزآمد كردن",
+	"select-wiki-first": "(ٱڤٱل یاٛ ڤیکی اْنتخاب بٱکؽت)",
+	"limit": "ٱندازٱ",
+	"page": "بٱلگٱ",
+	"output": "نٱتیجٱ",
+	"update": "رۊزآمد کردن",
 	"tools-delete": "پاك كردن",
 	"tools-links": "هوم پیوندیا",
 	"tools-hist": "ويرگار",
