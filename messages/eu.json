@@ -3,7 +3,8 @@
 		"authors": [
 			"Amaia",
 			"An13sa",
-			"Subi"
+			"Subi",
+			"Xabier Armendaritz"
 		]
 	},
 	"title": "OrphanTalk",
@@ -19,7 +20,7 @@
 	"update": "Eguneratu",
 	"tools-view": "Ikusi",
 	"tools-delete": "Ezabatu",
-	"tools-links": "Honanzko loturak",
+	"tools-links": "Honanzko estekak",
 	"tools-subject": "Gaiaren orria",
 	"tools-hist": "Ikusi historia",
 	"tools-curr": "Azken aldaketa",
