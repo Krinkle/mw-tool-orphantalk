@@ -4,7 +4,7 @@
 			"McDutchie"
 		]
 	},
-	"title": "OrphanTalk2",
+	"title": "OrphanTalk",
 	"select-wiki-first": "(selige primo un wiki)",
 	"hideredirects": "Celar redirectiones",
 	"hidesubpages": "Celar subpaginas",
@@ -12,13 +12,13 @@
 	"page": "Pagina",
 	"output": "Resultato",
 	"update": "Actualisar",
-	"tools-delete": "deler",
-	"tools-links": "ligamines",
-	"tools-subject": "subjecto",
-	"tools-hist": "hist",
-	"tools-curr": "actu",
-	"tools-globalusage": "uso global",
-	"deletesummary": "Radimento de paginas de discussion orphane via $1",
+	"tools-delete": "Deler",
+	"tools-links": "Paginas ligate a iste",
+	"tools-subject": "Pagina de subjecto",
+	"tools-hist": "Vider historia",
+	"tools-curr": "Ultime cambiamento",
+	"tools-globalusage": "Uso del file",
+	"deletesummary": "$1: Pagina de discussion orphane",
 	"noresults": "Nulle pagina de discussion orphane in iste wiki e in iste spatio de nomines correspondeva a tu configurationes.",
 	"resultslimited": "Le resultatos ha essite limitate a $1 paginas."
 }
