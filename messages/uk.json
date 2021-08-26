@@ -3,6 +3,7 @@
 		"authors": [
 			"Andriykopanytsia",
 			"Base",
+			"DDPAT",
 			"Тест"
 		]
 	},
@@ -14,7 +15,7 @@
 	"hidesubpages": "Приховати підсторінки",
 	"limit": "Обмеження",
 	"page": "Сторінка",
-	"tooltip-redirect": "Ця сторінка є переспрямуванням",
+	"tooltip-redirect": "Ця сторінка є перенаправленням",
 	"output": "Вивід",
 	"update": "Оновити",
 	"tools-view": "Переглянути",
