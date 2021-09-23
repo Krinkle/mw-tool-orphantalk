@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Olve Utne"
+		]
+	},
+	"label-wiki": "Wiki",
+	"select-wiki-first": "(vällji wikiv vuostak)",
+	"hidesubpages": "Tjiega vuolepbelijt",
+	"page": "Bielle",
+	"tools-view": "Vuoseda",
+	"tools-delete": "Gádoda",
+	"tools-links": "Mij liŋŋki dehki",
+	"tools-subject": "Ábnasbielle",
+	"tools-hist": "Vuoseda histurjav",
+	"tools-globalusage": "Fijjlaadnem"
+}
