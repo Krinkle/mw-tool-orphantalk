@@ -39,5 +39,20 @@ $kgBase->setSourceInfoGithub( 'Krinkle', 'mw-tool-orphantalk', dirname( __DIR__ 
  * -------------------------------------------------
  */
 
+
+// Mock the wiki replicas during local development:
+
+// $kgCache->set(
+// 	kfCacheKey( 'base', 'labsdb', 'meta', 'dbinfos' ),
+// 	array(
+// 		'metawiki' => array(
+// 			'dbname' => 'metawiki',
+// 			'family' => 'special',
+// 			'url' => 'https://meta.wikimedia.org',
+// 			'slice' => 's0.local'
+// 		)
+// 	)
+// );
+
 $tool->run();
 $kgBase->flushMainOutput();
