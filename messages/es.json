@@ -3,6 +3,7 @@
 		"authors": [
 			"AwesomeOrange89",
 			"Fitoschido",
+			"Jakeukalane",
 			"Joaquin1001",
 			"Macofe",
 			"Steef"
@@ -11,7 +12,7 @@
 	"title": "OrphanTalk",
 	"description": "Encuentra páginas de discusión huérfanas.",
 	"label-wiki": "Wiki",
-	"select-wiki-first": "(selecciona primero un wiki)",
+	"select-wiki-first": "(selecciona primero una wiki)",
 	"hideredirects": "Ocultar redirecciones",
 	"hidesubpages": "Ocultar subpáginas",
 	"limit": "Límite",
@@ -27,6 +28,6 @@
 	"tools-curr": "Último cambio",
 	"tools-globalusage": "Usos del archivo",
 	"deletesummary": "$1: página de discusión huérfana",
-	"noresults": "Ninguna página de discusión huérfana en este wiki, en este espacio de nombres coinciden con tu configuración.",
+	"noresults": "Ninguna página de discusión huérfana en esta wiki en este espacio de nombres coincide con tu configuración.",
 	"resultslimited": "Se limitaron los resultados a $1 páginas."
 }
