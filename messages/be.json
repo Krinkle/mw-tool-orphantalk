@@ -3,7 +3,8 @@
 		"authors": [
 			"Artificial123",
 			"LexArt",
-			"Mechanizatar"
+			"Mechanizatar",
+			"ZlyiLev"
 		]
 	},
 	"title": "OrphanTalk",
@@ -20,7 +21,7 @@
 	"tools-view": "Прагляд",
 	"tools-delete": "Выдаліць",
 	"tools-links": "Сюды спасылаюцца",
-	"tools-subject": "Старонка праекту",
+	"tools-subject": "Старонка праекта",
 	"tools-hist": "Паказаць гісторыю",
 	"tools-curr": "Апошняя змена",
 	"tools-globalusage": "Выкарыстанне файла",
