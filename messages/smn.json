@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne"
+		]
+	},
+	"title": "OrphanTalk",
+	"label-wiki": "Wiki",
+	"select-wiki-first": "(valjii wiki vistig)",
+	"hideredirects": "Čievâ stivriimijd",
+	"hidesubpages": "Čievâ vyelisiijđoid",
+	"page": "Sijđo",
+	"update": "Peivid",
+	"tools-view": "Čääiti",
+	"tools-delete": "Siho",
+	"tools-links": "Teehin čujotteijee siijđoh",
+	"tools-subject": "Fáddásijđo",
+	"tools-hist": "Čääiti historjá",
+	"tools-globalusage": "Tiätuvuárhá kevttim"
+}
