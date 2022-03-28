@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Beginneruser",
 			"Ebraminio",
 			"FarsiNevis",
 			"Reza1615",
@@ -15,7 +16,7 @@
 	"hidesubpages": "پنهان کردن زیرصفحه‌ها",
 	"limit": "تعداد",
 	"page": "صفحه",
-	"tooltip-redirect": "این صفحه تغییر مسیر است",
+	"tooltip-redirect": "این صفحه یک تغییر مسیر است",
 	"output": "خروجی",
 	"update": "روزآمدسازی",
 	"tools-view": "نمایش",
