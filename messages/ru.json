@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Lvova",
-			"Okras"
+			"Okras",
+			"Pacha Tchernof"
 		]
 	},
 	"title": "OrphanTalk",
@@ -16,7 +17,7 @@
 	"tooltip-redirect": "Это страница перенаправления",
 	"output": "Результат",
 	"update": "Обновить",
-	"tools-view": "Просмотр",
+	"tools-view": "Посмотреть",
 	"tools-delete": "Удалить",
 	"tools-links": "Ссылки сюда",
 	"tools-subject": "Основная страница",
