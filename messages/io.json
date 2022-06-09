@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"label-wiki": "Wiki",
+	"hideredirects": "Celar ridirekti",
+	"limit": "Limito",
+	"page": "Pagino",
+	"tooltip-redirect": "Ca pagino esas ridirekto",
+	"output": "Produkturo",
+	"update": "Aktualigar",
+	"tools-view": "Videz",
+	"tools-delete": "Efacar",
+	"tools-links": "Quo ligesas adhike",
+	"tools-subject": "Temala pagino",
+	"tools-hist": "Kronologio",
+	"tools-curr": "Lasta modifikuro",
+	"tools-globalusage": "Uzadi di arkivo",
+	"deletesummary": "$1: Diskuto-pagino orfana",
+	"resultslimited": "La limito di la rezulti esis $1 pagini."
+}
