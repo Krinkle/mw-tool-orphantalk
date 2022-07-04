@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Saurmandal",
 			"Siddhartha Ghai"
 		]
 	},
@@ -8,7 +9,7 @@
 	"description": "एकाकी वार्ता पृष्ठ खोजें",
 	"label-wiki": "विकी",
 	"select-wiki-first": "(पहले एक विकी चुनें)",
-	"hideredirects": "पुनर्निर्देश छुपाएँ",
+	"hideredirects": "अनुप्रेषण छिपाएँ",
 	"hidesubpages": "उपपृष्ठ छुपाएँ",
 	"limit": "सीमा",
 	"page": "पृष्ठ",
