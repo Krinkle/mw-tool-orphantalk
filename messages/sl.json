@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
 	"title": "OsiroteliPogovori",
 	"description": "Najdite osirotele pogovorne strani.",
-	"label-wiki": "Wiki",
+	"label-wiki": "Viki",
 	"select-wiki-first": "(najprej izberite wiki)",
 	"hideredirects": "Skrij preusmeritve",
 	"hidesubpages": "Skrij podstrani",
@@ -23,6 +24,6 @@
 	"tools-curr": "Zadnja sprememba",
 	"tools-globalusage": "Uporaba datoteke",
 	"deletesummary": "$1: Osirotela pogovorna stran",
-	"noresults": "Nobena osirotela pogovorna stran na tem wikiju v tem imenskem prostoru ne ustreza vašim nastavitvam.",
-	"resultslimited": "Rezultati so bili omejeni na $1 stran."
+	"noresults": "Nobena osirotela pogovorna stran v tem vikiju v tem imenskem prostoru ne ustreza vašim nastavitvam.",
+	"resultslimited": "Zadetki so bili omejeni na $1 strani."
 }
