@@ -5,13 +5,17 @@
 		]
 	},
 	"title": "OrphanTalk",
+	"description": "Trovar paginas de discussion orphane.",
+	"label-wiki": "Wiki",
 	"select-wiki-first": "(selige primo un wiki)",
 	"hideredirects": "Celar redirectiones",
 	"hidesubpages": "Celar subpaginas",
 	"limit": "Limite",
 	"page": "Pagina",
+	"tooltip-redirect": "Iste pagina es un redirection",
 	"output": "Resultato",
 	"update": "Actualisar",
+	"tools-view": "Vider",
 	"tools-delete": "Deler",
 	"tools-links": "Paginas ligate a iste",
 	"tools-subject": "Pagina de subjecto",
@@ -19,6 +23,6 @@
 	"tools-curr": "Ultime cambiamento",
 	"tools-globalusage": "Uso del file",
 	"deletesummary": "$1: Pagina de discussion orphane",
-	"noresults": "Nulle pagina de discussion orphane in iste wiki e in iste spatio de nomines correspondeva a tu configurationes.",
+	"noresults": "Necun pagina de discussion orphane sur iste wiki in iste spatio de nomines corresponde a tu parametros.",
 	"resultslimited": "Le resultatos ha essite limitate a $1 paginas."
 }
