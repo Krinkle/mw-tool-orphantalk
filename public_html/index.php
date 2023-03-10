@@ -1,9 +1,11 @@
 <?php
 /**
- * Main index
- *
  * @copyright 2011-2018 Timo Tijhof
+ * @license MIT
  */
+
+use Krinkle\Intuition\Intuition;
+use Krinkle\Toolbase\BaseTool;
 
 /**
  * Configuration
@@ -30,9 +32,12 @@ $kgBase = BaseTool::newFromArray( [
 		'resources/chosen/chosen.jquery.min.js',
 		'main.js',
 	],
+	'sourceInfo' => array(
+		'issueTrackerUrl' => 'https://phabricator.wikimedia.org/tag/orphantalk/',
+	),
 	'requireJS' => true,
 ] );
-$kgBase->setSourceInfoGithub( 'Krinkle', 'mw-tool-orphantalk', dirname( __DIR__ ) );
+$kgBase->setSourceInfoGerrit( 'labs/tools/orphantalk', dirname( __DIR__ ) );
 
 /**
  * Output
@@ -42,8 +47,11 @@ $kgBase->setSourceInfoGithub( 'Krinkle', 'mw-tool-orphantalk', dirname( __DIR__ 
 
 // Mock the wiki replicas during local development:
 
+// use Krinkle\Toolbase\Cache;
+// global $kgCache;
+// '@phan-var Cache $kgCache';
 // $kgCache->set(
-// 	kfCacheKey( 'base', 'labsdb', 'meta', 'dbinfos' ),
+// 	Cache::makeKey( 'base', 'labsdb', 'meta', 'dbinfos' ),
 // 	array(
 // 		'metawiki' => array(
 // 			'dbname' => 'metawiki',

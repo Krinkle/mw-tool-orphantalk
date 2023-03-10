@@ -1,8 +1,17 @@
 <?php
 /**
- * Main class for the OrphanTalk tool.
- *
  * @copyright 2011-2018 Timo Tijhof
+ * @license MIT
+ */
+
+use Krinkle\Toolbase\Html;
+use Krinkle\Toolbase\KrToolBaseClass;
+use Krinkle\Toolbase\LabsDB;
+use Krinkle\Toolbase\Logger;
+use Krinkle\Toolbase\Wiki;
+
+/**
+ * Main class for the OrphanTalk tool.
  */
 class OrphanTalk extends KrToolBaseClass {
 
@@ -42,7 +51,7 @@ class OrphanTalk extends KrToolBaseClass {
 
 	protected function showForm() {
 		global $kgBase, $I18N;
-		$section = new KfLogSection( __METHOD__ );
+		$section = Logger::createScope( __METHOD__ );
 
 		$wikiOptionsHtml = kfGetAllWikiOptionHtml( array( 'current' => $this->params['wiki'] ) );
 
@@ -66,7 +75,7 @@ class OrphanTalk extends KrToolBaseClass {
 			$limitOptionsHtml .= Html::element( 'option', array(
 				'value' => $limit,
 				'selected' => $limit === $this->params['limit'],
-			), $limit );
+			), (string)$limit );
 		}
 
 		$kgBase->addOut(
@@ -163,7 +172,7 @@ class OrphanTalk extends KrToolBaseClass {
 
 	protected function execute() {
 		global $kgBase, $I18N;
-		$section = new KfLogSection( __METHOD__ );
+		$section = Logger::createScope( __METHOD__ );
 
 		// Required
 		if ( !$this->params['wiki'] || !$this->params['ns'] ) {
@@ -190,7 +199,7 @@ class OrphanTalk extends KrToolBaseClass {
 			$links = $this->getPageActionLinks( $wiki, $row );
 			$tableHtml .= ''
 				. Html::rawElement( 'tr', [],
-					Html::element( 'td', array(), $i + 1 )
+					Html::element( 'td', array(), (string)($i + 1) )
 					. Html::rawElement( 'td',
 						array(
 							'class' => array(
@@ -339,7 +348,7 @@ class OrphanTalk extends KrToolBaseClass {
 	}
 
 	/**
-	 * @param string $url
+	 * @param string $dbname
 	 * @return array
 	 */
 	protected function getNamespaces( $dbname ) {
